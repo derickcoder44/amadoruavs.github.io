@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #sponsorHero {
     background-image: url("/assets/images/sponsor-title.jpg");
     background-repeat: no-repeat;
@@ -8,8 +12,14 @@
     }
 }
 
+#homeHero {
+    background-image: url("/assets/images/home-title.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .background-tint {
-    background-color: rgba(50,50,50,.5); // Tint color
+    background-color: rgba(50,50,50,.7); // Tint color
     background-blend-mode: multiply;
 }
 

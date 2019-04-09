@@ -1,1 +1,23 @@
-#sponsorHero{background-image:url("/assets/images/sponsor-title.jpg");background-repeat:no-repeat;background-size:cover}#sponsorHero h1{color:white}.background-tint{background-color:rgba(50,50,50,0.5);background-blend-mode:multiply}#sponsorLevels{max-width:50%;max-height:50%;margin:0 auto}
+html {
+  scroll-behavior: smooth; }
+
+#sponsorHero {
+  background-image: url("/assets/images/sponsor-title.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #sponsorHero h1 {
+    color: white; }
+
+#homeHero {
+  background-image: url("/assets/images/home-title.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.background-tint {
+  background-color: rgba(50, 50, 50, 0.7);
+  background-blend-mode: multiply; }
+
+#sponsorLevels {
+  max-width: 50%;
+  max-height: 50%;
+  margin: 0 auto; }
