@@ -1,0 +1,8 @@
+- name: About
+  link: /about.html
+- name: Join
+  link: /join.html
+- name: The Team
+  link: /team.html
+- name: Sponsors
+  link: /sponsors.html
