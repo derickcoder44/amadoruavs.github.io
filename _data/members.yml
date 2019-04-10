@@ -4,11 +4,11 @@
   image: /assets/images/members/placeholder.webp
 - name: Ishan Duriseti
   division: Electromechanical
-  position: Design/CAD
+  position: Design
   image: /assets/images/members/ishan.webp
 - name: Kai Gottschalk
   division: Electromechanical
-  position: Design/CAD
+  position: Electrics
   image: /assets/images/members/kai.webp
 - name: Frank Yu
   division: Electromechanical
@@ -40,5 +40,5 @@
   image: /assets/images/members/placeholder.webp
 - name: Edward Ding
   division: Business
-  position: Business Consultant
+  position: Public Relations
   image: /assets/images/members/placeholder.webp
