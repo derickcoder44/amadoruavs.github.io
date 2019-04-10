@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1530px" height="1059px" viewBox="0 0 1530 1059" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard.3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="87.480937%" y1="67.2290699%" x2="18.6215311%" y2="67.2290699%" id="linearGradient-1">
+            <stop stop-color="#0EABCD" offset="0%"></stop>
+            <stop stop-color="#694FD4" offset="44.6238259%"></stop>
+            <stop stop-color="#CE2A7F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard.3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M745.296441,448.292822 L745.296441,552.836749 L697.791401,552.836749 L693.407118,561 L745.296441,561 L745.296441,670.27188 L770.84938,670.27188 L798.91306,670.27188 L913.372623,471.363031 L957.057353,547.027202 L859.557353,715.902156 L664.557353,715.902156 L627.536907,651.780862 L745.296441,448.292822 Z M759.402054,423.918374 L759.449291,423.836749 L731.292747,423.997594 L613.852117,628.078112 L567.057353,547.027202 L664.557353,378.152248 L859.557353,378.152248 L899.683825,447.653336 L784.703559,646.332651 L784.703559,423.918374 L759.402054,423.918374 Z" id="Combined-Shape" fill="url(#linearGradient-1)"></path>
+    </g>
+</svg>

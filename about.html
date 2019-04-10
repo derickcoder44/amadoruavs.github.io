@@ -1,5 +1,46 @@
 ---
 layout: default
-title: About | AmadorUAVs
+title: Team | AmadorUAVs
+heading: The Team
+subheading: Our hardworking team is comprised of many brilliant high school engineers.
 ---
-<h1>Hello, World!</h1>
+<section class="hero banner-gradient">
+    <div class="hero-body">
+        <div class="container">
+            <div class="columns is-mobile is-centered">
+                <div class="column">
+                    <h1 class="title is-1 has-text-centered">{{ page.heading }}</h1>
+                </div>
+            </div>
+            <div class="columns is-mobile is-centered">
+                <div class="column">
+                    <h1 class="subtitle is-italic has-text-centered">{{ page.subheading }}</h1>
+                </div>
+            </div>
+        </div>
+</section>
+{% for division in site.data.divisions %}
+<section class="section" id="division{{ division.name }}">
+    <div class="container">
+        <h1 class="title">{{ division.name }}</h1>
+        {% assign filtered_members = site.data.members | where: 'division', division.name %}
+        <div class="columns">
+            {% for member in filtered_members %}
+            <div class="column is-3">
+                <div class=card">
+                    <div class=card-image">
+                        <figure class="image is-1by1">
+                            <img src="{{ member.image }}" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4 has-text-centered">{{ member.name }}</p>
+                        <p class="subtitle is-6 has-text-centered">{{ member.position }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endfor %}

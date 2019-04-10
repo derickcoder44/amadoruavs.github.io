@@ -4,7 +4,7 @@ title: Team | AmadorUAVs
 heading: The Team
 subheading: Our hardworking team is comprised of many brilliant high school engineers.
 ---
-<section class="hero is-primary">
+<section class="hero banner-gradient">
     <div class="hero-body">
         <div class="container">
             <div class="columns is-mobile is-centered">
@@ -19,19 +19,28 @@ subheading: Our hardworking team is comprised of many brilliant high school engi
             </div>
         </div>
 </section>
-<section class="section">
+{% for division in site.data.divisions %}
+<section class="section" id="division{{ division.name }}">
     <div class="container">
-        <h1 class="title">Software</h1>
-        <div class=card">
-            <div class=card-image">
-                <figure class="image is-4by3">
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                </figure>
+        <h1 class="title">{{ division.name }}</h1>
+        {% assign filtered_members = site.data.members | where: 'division', division.name %}
+        <div class="columns">
+            {% for member in filtered_members %}
+            <div class="column is-3">
+                <div class=card">
+                    <div class=card-image">
+                        <figure class="image is-1by1">
+                            <img src="{{ member.image }}" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4 has-text-centered">{{ member.name }}</p>
+                        <p class="subtitle is-6 has-text-centered">{{ member.position }}</p>
+                    </div>
+                </div>
             </div>
-            <div class="card-content">
-                <p class="title is-4 has-text-centered">Kalyan Sriram</p>
-                <p class="subtitle is-6 has-text-centered">VP of Software</p>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
+{% endfor %}
