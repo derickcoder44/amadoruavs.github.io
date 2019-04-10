@@ -66,7 +66,7 @@ html {
 .trap {
     display: inline-block;
     overflow: hidden;
-    margin: 0 6em;
+    margin: 0 3em;
     /**outline: solid 1px;/**/
     width: 100vw;
     height: 8.66em;
@@ -84,4 +84,8 @@ html {
     // float: right;
     // border-color: blue transparent blue transparent;
     // border-width: 0 0 0 50px;
+}
+
+.large-title {
+    font-size: 60pt;
 }
