@@ -36,3 +36,23 @@ html {
 
 .banner-gradient {
   background-image: linear-gradient(to right, #FD6EC4, #7B73F4); }
+
+.footer {
+  background-color: #DDDDDD !important; }
+
+.trap:before {
+  display: block;
+  background: linear-gradient(to right, #FD6EC4, #7B73F4);
+  content: '';
+  width: 200%;
+  height: 25%;
+  transform: skewX(-30deg) rotate(30deg) translate(-1.25em, 3.25em); }
+
+.trap {
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 6em;
+  /**outline: solid 1px;/**/
+  width: 100vw;
+  height: 8.66em;
+  transform: rotate(-30deg) skewX(30deg); }

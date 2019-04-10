@@ -50,3 +50,38 @@ html {
     background-image: linear-gradient(to right, #FD6EC4, #7B73F4);
     // #CE2A7F, #744BCB, #0EABCD
 }
+
+.footer {
+    background-color: #DDDDDD !important;
+}
+
+.trap:before {
+  display: block;
+  background: linear-gradient(to right, #FD6EC4, #7B73F4);
+  content: '';
+  width: 200%; height: 25%;
+  transform: skewX(-30deg) rotate(30deg) translate(-1.25em, 3.25em);
+}
+
+.trap {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 6em;
+    /**outline: solid 1px;/**/
+    width: 100vw;
+    height: 8.66em;
+    transform: rotate(-30deg) skewX(30deg);
+    // border-bottom-width: 100vh;
+    // border-image: linear-gradient(#FD6EC4, #7B73F4) 100;
+    // border-bottom:100vh solid linear-gradient(to right, #FD6EC4, #7B73F4);
+    // border-left: 10vw solid transparent;
+    // height: 100%;
+    // width: 50vw;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // z-index: 2;
+    // float: right;
+    // border-color: blue transparent blue transparent;
+    // border-width: 0 0 0 50px;
+}
