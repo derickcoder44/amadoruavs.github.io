@@ -56,3 +56,6 @@ html {
   width: 100vw;
   height: 8.66em;
   transform: rotate(-30deg) skewX(30deg); }
+
+.large-title {
+  font-size: 5rem !important; }
