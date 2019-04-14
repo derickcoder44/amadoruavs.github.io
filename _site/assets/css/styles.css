@@ -59,3 +59,6 @@ html {
 
 .large-title {
   font-size: 5rem !important; }
+
+.bot-pad-title {
+  padding-bottom: 10px; }
