@@ -1,23 +1,31 @@
 - name: Sungje Park
-  division: Electromechanical
-  position: Electromechanical VP
+  division: Officers
+  position: President
   image: /assets/images/members/placeholder.webp
 - name: Ishan Duriseti
   division: Electromechanical
-  position: Design
+  position: Mechanical VP
   image: /assets/images/members/ishan.webp
 - name: Kai Gottschalk
   division: Electromechanical
-  position: Electrics
+  position: Electrical VP
   image: /assets/images/members/kai.webp
-- name: Frank Yu
-  division: Electromechanical
-  position: Physics
-  image: /assets/images/members/frank.webp
 - name: Kalyan Sriram
   division: Software
   position: Software VP
   image: /assets/images/members/placeholder.webp
+- name: Marie Lee
+  division: Officers
+  position: Secretary
+  image: /assets/images/members/marie.webp
+- name: Edward Ding
+  division: Officers
+  position: Treasurer
+  image: /assets/images/members/placeholder.webp
+- name: Frank Yu
+  division: Electromechanical
+  position: Physics
+  image: /assets/images/members/frank.webp
 - name: Vincent Wang
   division: Software
   position: Image Processing
@@ -26,19 +34,12 @@
   division: Software
   position: Autopilot
   image: /assets/images/members/derick.webp
-- name: Marie Lee
-  division: Software
-  position: Mission Planning
-  image: /assets/images/members/marie.webp
-- name: Athan Yang
-  division: Business
-  position: Business VP
-  image: /assets/images/members/placeholder.webp
 - name: Ethan Apalis
   division: Business
   position: Fundraising
   image: /assets/images/members/placeholder.webp
-- name: Edward Ding
-  division: Business
-  position: Public Relations
+- name: Sri Kondapalli
+  division: Software
+  position: Obstacle Avoidance
   image: /assets/images/members/placeholder.webp
+
