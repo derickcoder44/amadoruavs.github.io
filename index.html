@@ -9,11 +9,43 @@ subheading: Building the future of autonomous aviation.
         <div class="container has-text-centered">
             <h1 class="title bot-pad-title large-title has-text-white">{{ page.heading }}</h1>
             <h1 class="subtitle is-1 has-text-white">{{ page.subheading }}</h1>
-            <a class="button is-info" href="/about.html">
+            <a class="button is-info" href="#blockAboutUs">
                 Learn More
             </a>
         </div>
     </div>
 </section>
-<!-- <div class="trap">dfdf</div> -->
 
+<!-- <div class="trap">dfdf</div> -->
+{% for block in site.data.about %}
+<section class="section" id="block{{ block.title }}">
+    <div class="container">
+        {% if block.align == 'left' %}
+        <div class="columns">
+            <div class="column">
+                <figure class="image">
+                    <img src="{{ block.image }}"</img>
+                </figure>
+		</div>
+            <div class="column has-text-centered">
+                <h1 class="title is-2">{{ block.title }}</h1>
+                <p class="is-size-4">{{ block.text }}</p>
+            </div>
+        </div>
+        {% else %}
+        <div class="columns">
+            <div class="column has-text-centered">
+                <h1 class="title is-2">{{ block.title }}</h1>
+                <p class="is-size-4">{{ block.text }}</p>
+            </div>
+            <div class="column">
+                <figure class="image">
+                    <img src="{{ block.image }}"</img>
+                </figure>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
+{% endfor %}
+{% include footer.html %}
