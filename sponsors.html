@@ -3,7 +3,8 @@ layout: default
 title: Sponsors | AmadorUAVs
 heading: Sponsor Us!
 subheading: Support high school aviation and engineering, and get cool perks such as a logo on our drone and more!
-text1: Interested in sponsoring AmadorUAVs? Contact us at officers@amadoruavs.com to learn more.
+bt_head: Interested in sponsoring AmadorUAVs? 
+bt_p: Contact us at officers@amadoruavs.com to learn more.
 ---
 <section class="hero fullheight-nav background-tint" id="sponsorHero">
     <div class="hero-body">
@@ -22,9 +23,11 @@ text1: Interested in sponsoring AmadorUAVs? Contact us at officers@amadoruavs.co
         </div>
     </div>
 </section>
-
-<h1 class="subtitle has-text-centered">{{ page.text1 }}</h1>
-<br />
+<br>
+<div class="container">
+	<h2 class="title is-3 has-text-centered">{{ page.bt_head }}</h1>
+	<p class ="is-size-5 has-text-centered">{{ page.bt_p }}</p>
+</div>
 
 <div class="container fullheight-img" id="sponsorLevelsSection">
     <br> 
@@ -33,4 +36,5 @@ text1: Interested in sponsoring AmadorUAVs? Contact us at officers@amadoruavs.co
     </figure>
     
 </div>
+<br>
 {% include footer.html %}
