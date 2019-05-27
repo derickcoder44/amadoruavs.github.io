@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Gilroy Light";
+  src: url("/assets/fonts/gilroy/light.ttf");
+  font-display: swap; }
 html {
   scroll-behavior: smooth; }
 
