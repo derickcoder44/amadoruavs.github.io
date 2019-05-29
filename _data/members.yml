@@ -2,44 +2,55 @@
   division: Electromechanical
   position: Mechanical VP
   image: /assets/images/members/ishan.webp
+  email: iduriseti@gmail.com
 - name: Kai Gottschalk
   division: Electromechanical
   position: Electrical VP
   image: /assets/images/members/kai.webp
+  email: amkkproductions@gmail.com
 - name: Kalyan Sriram
   division: Software
   position: Software VP
   image: /assets/images/members/placeholder.webp
+  email: coder.kalyan@gmail.com
 - name: Marie Lee
   division: Business
   position: Business VP
   image: /assets/images/members/marie.webp
+  # email: itsmarielee@gmail.com
 - name: Edward Ding
   division: Business
   position: Treasurer
   image: /assets/images/members/placeholder.webp
+  # email: kalsrir@amadoruavs.com
 - name: Frank Yu
   division: Electromechanical
   position: Physics
   image: /assets/images/members/frank.webp
+  email: ironwolf20042004@gmail.com
 - name: Vincent Wang
   division: Software
   position: Image Processing
   image: /assets/images/members/vincent.webp
+  email: vwangsf@gmail.com
 - name: Derick Mathews
   division: Software
   position: Autopilot
   image: /assets/images/members/derick.webp
+  email: derickdennismathews@gmail.com
 - name: Ethan Apalis
   division: Business
   position: Fundraising
   image: /assets/images/members/placeholder.webp
+  # email: kalsrir@amadoruavs.com
 - name: Sungje Park
   division: Business
   position: Management
   image: /assets/images/members/placeholder.webp
+  email: sungje.park123@gmail.com
 - name: Sri Kondapalli
   division: Software
   position: Obstacle Avoidance
   image: /assets/images/members/placeholder.webp
+  # email: kalsrir@amadoruavs.com
 
