@@ -1,15 +1,22 @@
 - name: About
   link: /index.html#aboutus
+  external: false
 - name: Join
   link: /join.html
+  external: false
 - name: The Team
   link: /team.html
+  external: false
 - name: Sponsors
   link: /sponsors.html
+  external: false
 - name: Competition
   link: http://www.auvsi-suas.org
+  external: true
 - name: Blog
   link: https://medium.com/@AmadorUAVs
+  external: true
 - name: Source
   link: https://gitlab.com/avhs-suas
+  external: true
 
