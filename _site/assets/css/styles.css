@@ -66,6 +66,13 @@ html {
 .member-profile {
   border-radius: 10px; }
 
+.page-title {
+  font-size: 70pt !important;
+  margin-bottom: 40px !important; }
+
+.page-subtitle {
+  margin-bottom: 40px !important; }
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }

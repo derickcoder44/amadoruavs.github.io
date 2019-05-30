@@ -12,11 +12,11 @@
   external: false
 - name: Competition
   link: http://www.auvsi-suas.org
-  external: true
+  external: false
 - name: Blog
   link: https://medium.com/@AmadorUAVs
-  external: true
+  external: false
 - name: Source
   link: https://gitlab.com/avhs-suas
-  external: true
+  external: false
 
