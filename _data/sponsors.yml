@@ -5,9 +5,9 @@ amount-size: 20
 title-color: "#222222"
 amount-color: "#222222"
 actions:
-    - title: "Donations"
-      href: "/donations.html"
-      style: "info"
+    #- title: "Donations"
+      #href: "/donations.html"
+      #style: "info"
     - title: "Sponsorship Info"
       href: ""
       style: "info"
