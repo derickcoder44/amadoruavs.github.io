@@ -1,0 +1,21 @@
+<section class="hero fullheight-nav background-tint" id="{{ include.id }}">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <h1 class="title bot-pad-title page-title has-text-white">{{ include.title }}</h1>
+            <h1 class="subtitle page-subtitle is-2 has-text-white">{{ include.subtitle }}</h1>
+
+            <div class="field is-grouped is-grouped-centered">
+                {% for action in include.actions %}
+                <p class="control action">
+                {% include button.html
+                href=action.href
+                title=action.title
+                style=action.style
+                icon=action.icon %}
+                </p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+

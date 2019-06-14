@@ -1,1 +1,83 @@
-- text: Interested in sponsoring AmadorUAVs? Contact us at officers@amadoruavs.com for information.
+ring-boxsize: 200
+ring-thickness: 24
+title-size: 20
+amount-size: 20
+title-color: "#222222"
+amount-color: "#222222"
+actions:
+    - title: "Donations"
+      href: "/donations.html"
+      style: "info"
+    - title: "Sponsorship Info"
+      href: ""
+      style: "info"
+    - title: " 2019 Sponsorship Packet"
+      href: "https://drive.google.com/open?id=1BZ1BHePTxTGrvTFHCgmu2J6DsGFHBZn"
+      style: "info"
+      icon": "fa-external-link-alt"
+list:
+    - title: KDE Direct
+      image: kde.png
+    - title: Apple
+      image: apple.png
+levels:
+    - name: platinum
+      title: Platinum
+      amount: 2000
+      colors:
+          - color: "#434343"
+          - color: "#4a4d74"
+          - color: "#cccccc"
+          - color: "#4a4d74"
+          - color: "#434343"
+      benefits:
+          - item: Company logo broadcast at SUAS Competition events
+          - item: Medium logo on the competition poster and team apparel
+          - item: Acknowledgement on our team website and at social events
+          - item: Logo on the Sponsorship Packet
+          - item: Priority for social meda spotlights
+          - item: Personal letter of appreciation and direct communication to club members
+    - name: gold
+      title: Gold
+      amount: 1000
+      colors:
+          - color: "#DBAB1F"
+          - color: "#EDCE47"
+          - color: "#C39C2C"
+          - color: "#EDCE47"
+          - color: "#DBAB1F"
+      benefits:
+          - item: Company logo broadcast at SUAS Competition events
+          - item: Medium logo on the competition poster and team apparel
+          - item: Acknowledgement on our team website and at social events
+          - item: Logo on the Sponsorship Packet
+          - item: Personal letter of appreciation
+    - name: silver
+      title: Silver
+      amount: 500
+      colors:
+          - color: "#B5B4A6"
+          - color: "#999999"
+          - color: "#B7B7B7"
+          - color: "#999999"
+          - color: "#B5B4A6"
+      benefits:
+          - item: Company logo broadcast at SUAS Competition events
+          - item: Medium logo on the competition poster and team apparel
+          - item: Acknowledgement on our team website w/ logo and link
+          - item: Logo on the Sponsorship Packet
+          - item: Personal letter of appreciation
+    - name: bronze
+      title: Bronze
+      amount: 250
+      colors:
+          - color: "#AA6137"
+          - color: "#E4A080"
+          - color: "#C7815C"
+          - color: "#E4A080"
+          - color: "#AA6137"
+      benefits:
+          - item: Small logo on the competition poster and team apparel
+          - item: Acknowledgement on our team website w/ logo and link
+          - item: Logo on the Sponsorship Packet
+          - item: Personal letter of appreciation

@@ -1,0 +1,26 @@
+components:
+    - title: Motors + Propellers
+      description: Motors are what make a multicopter go, and our hexacopter needs 6 of them!
+      price: 380
+      completed: false
+    - title: Speed Controllers
+      description: Electronic Speed Controllers (ESCs) provide power to the motors and allow fine speed adjustments.
+      price: 240
+      completed: false
+    - title: Batteries
+      description: Of course, the drone won't fly without a power source.
+      price: 300
+      completed: false
+    - title: Flight Controller
+      description: This microcontroller handles self-leveling of the drone as well as navigation commands, gps, sensors etc.
+      price: 230
+      completed: true
+    - title: Onboard Computer
+      description: The onboard companion computer works with the flight controller to perform advanced vision processing and obstacle avoidance.
+      price: 140
+      completed: false
+    - title: Camera + Gimbal
+      description: A high resolution camera is used for ground object detection and classification.
+      price: 400
+      completed: false
+

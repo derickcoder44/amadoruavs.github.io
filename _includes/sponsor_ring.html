@@ -1,0 +1,11 @@
+<svg width="{{ include.boxsize }}" height="{{ include.boxsize }}">
+    <lineargradient id="grad-{{ include.name }}" x1="0" y1="0" x2="0" y2="1">
+    {% for item in include.colors %}
+    <stop offset="{{ forloop.index | minus: 1 | times: 25 }}%" stop-color="{{ item.color }}" />
+    {% endfor %}
+    </lineargradient>
+
+    <circle cx="{{ include.boxsize | divided_by: 2 }}" cy="{{ include.boxsize | divided_by: 2 }}" r="{{ include.boxsize | minus: include.thickness | divided_by: 2 }}" stroke="url(#grad-{{ include.name }})" stroke-width="{{ include.thickness}}px" fill="white"/>
+    <text x="50%" y="45%" text-anchor="middle" font-size="{{ site.data.sponsors.title-size }}pt" fill="{{ site.data.sponsors.title-color }}">{{ include.title }}</text>
+    <text x="50%" y="65%" text-anchor="middle" font-size="{{ site.data.sponsors.amount-size }}pt" fill="{{ site.data.sponsors.amount-color }}">${{ include.amount }}</text>
+</svg>

@@ -1,0 +1,63 @@
+---
+layout: default
+title: Fundraising Progress | AmadorUAVs
+heading: Fundraising Progress
+subheading: 
+---
+<section class="hero banner-gradient is-medium">
+    <div class="hero-body">
+        <div class="columns is-mobile is-centered">
+            <div class="column">
+                <h1 class="title is-1 has-text-white has-text-centered">{{ page.heading }}</h1>
+            </div>
+        </div>
+        <br />
+        <br />
+        {% assign sofar = 0 %}
+        {% assign tot = 0 %}
+        {% for component in site.data.progress.components %}
+        {% if component.completed %}
+        {% assign sofar = sofar | plus: component.price %}
+        {% endif %}
+        {% assign tot = tot | plus: component.price %}
+        {% endfor %}
+        <div class="columns is-mobile is-centered">
+            <div class="column is-half">
+                <p class="subtitle is-4 has-text-white has-text-centered is-italic">${{ sofar }} raised out of ${{ tot }} required</p>
+                <progress class="progress is-large" value="{{ sofar }}" max="{{ tot }}">{{ sofar }}%</progress>
+            </div>
+        </div>
+</section>
+
+<br />
+<br />
+
+<div class="container">
+    {% assign div = site.data.progress.components.size | divided_by: 3 %}
+    {% for i in (0..div) %}
+    <div class="columns">
+        {% assign starti = i | times: 3 %}
+        {% assign endi = starti | plus: 2 %}
+        {% for j in (starti..endi) %}
+        {% if site.data.progress.components[j] %}
+        <div class="column is-4">
+            <div class="card" style="border-radius: 10px">
+                <div class="card-content">
+                    <p class="title">{{ site.data.progress.components[j].title }}</p>
+                    <p class="subtitle">{{ site.data.progress.components[j].description }}</p>
+                    <div class="tags has-addons">
+                        <span class="tag is-info is-large">${{ site.data.progress.components[j].price }}</span>
+                        {% if site.data.progress.components[j].completed %}
+                        <span class="tag is-success is-large">Done</span>
+                        {% else %}
+                        <span class="tag is-danger is-large">Todo</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>

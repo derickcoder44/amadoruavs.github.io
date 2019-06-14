@@ -3,21 +3,28 @@ layout: default
 title: Home | AmadorUAVs
 heading: We are AmadorUAVs
 subheading: Building the future of autonomous aviation.
+actions:
+    - title: "Learn More"
+      href: "#aboutus"
+      style: "info"
+      icon: "fa-arrow-down"
 ---
-<section class="hero fullheight-nav background-tint" id="homeHero">
-    <div class="hero-body">
-        <div class="container has-text-centered">
-            <h1 class="title bot-pad-title page-title has-text-white">{{ page.heading }}</h1>
-            <h1 class="subtitle page-subtitle is-2 has-text-white">{{ page.subheading }}</h1>
-            <a class="button is-info is-medium is-rounded" href="#aboutus">
-                <span>Learn More</span> <!-- ▼ -->
-                <span class="icon is-medium">
-                    <i class="fas fa-arrow-down"></i>
-                </span>
-            </a>
-        </div>
-    </div>
-</section>
+{% include imgbanner.html title=page.heading subtitle=page.subheading
+id="homeHero" actions=page.actions %}
+<!--<section class="hero fullheight-nav background-tint" id="homeHero">-->
+    <!--<div class="hero-body">-->
+        <!--<div class="container has-text-centered">-->
+            <!--<h1 class="title bot-pad-title page-title has-text-white">{{ page.heading }}</h1>-->
+            <!--<h1 class="subtitle page-subtitle is-2 has-text-white">{{ page.subheading }}</h1>-->
+            <!--<a class="button is-info is-medium is-rounded" href="#aboutus">-->
+                <!--<span>Learn More</span> [> ▼ <]-->
+                <!--<span class="icon is-medium">-->
+                    <!--<i class="fas fa-arrow-down"></i>-->
+                <!--</span>-->
+            <!--</a>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 <!-- <div class="trap">dfdf</div> -->
 {% for block in site.data.about %}
@@ -27,7 +34,7 @@ subheading: Building the future of autonomous aviation.
         <div class="columns">
             <div class="column">
                 <figure class="image">
-                    <img src="{{ block.image }}" style="border-radius:15px;"</img>
+                    <img src="{{ block.image }}" style="border-radius:10px;"</img>
                 </figure>
 		</div>
             <div class="column has-text-centered">
@@ -43,7 +50,7 @@ subheading: Building the future of autonomous aviation.
             </div>
             <div class="column">
                 <figure class="image">
-                    <img src="{{ block.image }}" style="border-radius:15px;"</img>
+                    <img src="{{ block.image }}" style="border-radius:10px;"</img>
                 </figure>
             </div>
         </div>

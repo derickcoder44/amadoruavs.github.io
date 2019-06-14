@@ -14,20 +14,37 @@
         <div id="navbarAmadorUavs" class="navbar-menu">
             <div class="navbar-start">
                 {% for item in site.data.navigation %}
-                {% if page.url == item.link %}
-                <a class="navbar-item is-active" href="{{ item.link }}">
-                    {{ item.name }}
-                </a>
-                {% else %}
-                <a class="navbar-item" href="{{ item.link }}">
-                    {{ item.name }}
-                </a>
-                {% endif %}
-                {% if item.external %}
-                <span style="vertical-align:sub;margin:auto;"class="icon is-large">
-                    <i class="fas fa-external-link-alt"></i>
-                </span>
-                {% endif %}
+                    {% if item.sublinks %}
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                {{ item.name }}
+                            </a>
+
+                            <div class="navbar-dropdown">
+                                {% for sublink in item.sublinks %}
+                                <a class="navbar-item" href="{{ sublink.link }}">
+                                        {{ sublink.name }}
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% else %}
+                        {% if page.url == item.link %}
+                        <a class="navbar-item is-active" href="{{ item.link }}">
+                            {{ item.name }}
+                        </a>
+                        {% else %}
+                        <a class="navbar-item" href="{{ item.link }}">
+                            {{ item.name }}
+                        </a>
+                        {% endif %}
+
+                        {% if item.external %}
+                        <span style="vertical-align:sub;margin:auto;"class="icon is-large">
+                            <i class="fas fa-external-link-alt"></i>
+                        </span>
+                        {% endif %}
+                    {% endif %}
                 {% endfor %}
             </div>
         </div>

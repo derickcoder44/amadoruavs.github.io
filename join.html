@@ -4,16 +4,5 @@ title: Join | AmadorUAVs
 heading: Join Us!
 subheading: We are currently not accepting applications, but we'd love to have you next year!
 ---
-<section class="hero banner-gradient is-large">
-    <div class="hero-body">
-        <div class="columns is-mobile is-centered">
-            <div class="column">
-                <h1 class="title is-1 has-text-white has-text-centered">{{ page.heading }}</h1>
-            </div>
-        </div>
-        <div class="columns is-mobile is-centered">
-            <div class="column">
-                <h1 class="subtitle is-italic has-text-white has-text-centered">{{ page.subheading }}</h1>
-            </div>
-        </div>
-</section>
+
+{% include banner.html title=page.heading subtitle=page.subheading size="is-large" %}

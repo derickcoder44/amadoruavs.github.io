@@ -1,0 +1,9 @@
+<a class="button is-{{ include.style }} is-medium is-rounded" href="{{ include.href }}" target="_blank">
+    <span>{{ include.title }}</span>
+    {% if include.icon %}
+    <span class="icon is-small">
+        <i class="fas {{ include.icon }}"></i>
+    </span>
+    {% endif %}
+</a>
+            
