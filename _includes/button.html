@@ -1,4 +1,4 @@
-<a class="button is-{{ include.style }} is-medium is-rounded" href="{{ include.href }}" target="_blank">
+<a class="button is-{{ include.style }} is-medium is-rounded" href="{{ include.href }}" {% if include.blank %} target="_blank" {% endif %}>
     <span>{{ include.title }}</span>
     {% if include.icon %}
     <span class="icon is-small">

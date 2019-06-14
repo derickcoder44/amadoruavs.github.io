@@ -8,13 +8,15 @@ actions:
     #- title: "Donations"
       #href: "/donations.html"
       #style: "info"
-    - title: "Sponsorship Info"
-      href: ""
-      style: "info"
+    #- title: "Sponsorship Info"
+      #href: "/sponsor"
+      #style: "info"
+      #blank: false
     - title: " 2019 Sponsorship Packet"
       href: "https://drive.google.com/open?id=1BZ1BHePTxTGrvTFHCgmu2J6DsGFHBZn"
       style: "info"
       icon": "fa-external-link-alt"
+      blank: true
 list:
     - title: KDE Direct
       image: kde.png
