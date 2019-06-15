@@ -3,9 +3,6 @@ image: registry.gitlab.com/amadoruavs/amadoruavs.gitlab.io
 variables:
   JEKYLL_ENV: production
 
-stages:
-  - deploy
-
 pages:
   script:
   - bundle install
