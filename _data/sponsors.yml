@@ -20,8 +20,6 @@ actions:
 list:
     - title: KDE Direct
       image: kde.png
-    - title: Apple
-      image: apple.png
 levels:
     - name: platinum
       title: Platinum
