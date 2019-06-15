@@ -1,4 +1,4 @@
-image: registry.gitlab.com/amadoruavs/amadoruavs.gitlab.io
+image: ruby
 
 variables:
   JEKYLL_ENV: production
