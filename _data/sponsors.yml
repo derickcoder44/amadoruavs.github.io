@@ -15,13 +15,11 @@ actions:
     - title: " 2019 Sponsorship Packet"
       href: "https://drive.google.com/open?id=1BZ1BHePTxTGrvTFHCgmu2J6DsGFHBZn"
       style: "info"
-      icon": "fa-external-link-alt"
+      icon: "fa-external-link-alt"
       blank: true
 list:
     - title: KDE Direct
       image: kde.png
-    - title: Apple
-      image: apple.png
 levels:
     - name: platinum
       title: Platinum
