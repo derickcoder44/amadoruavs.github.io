@@ -1,2 +1,2 @@
-# plugins:
-    # - jekyll-minifier
+plugins:
+  - jekyll-include-cache

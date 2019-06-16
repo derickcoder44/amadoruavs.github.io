@@ -130,3 +130,60 @@ html {
  //.sponsor-image-figure {
      //padding: 10px;
  //}
+
+.plan-items {
+    columns: 1 !important;
+}
+
+.plan-price {
+    width: 50% !important;
+    margin: auto !important;
+}
+
+.plan-item {
+    font-size: 1.1em !important;
+}
+
+.text-platinum {
+    background: linear-gradient(to right, #434343 0%, #4A4D74 25%, #CCCCCC 50%, #4A4D74 75%, #434343 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-gold {
+    background: linear-gradient(to right, #DBAB1F 0%, #EDCE47 25%, #C39C2C 50%, #EDCE47 75%, #DBAB1F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-silver {
+    background: linear-gradient(to right, #B5B4A6 0%, #999999 25%, #B7B7B7 50%, #999999 75%, #B5B4A6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-bronze {
+    background: linear-gradient(to right, #AA6137 0%, #E4A080 25%, #C7815C 50%, #E4a080 75%, #AA6137 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.has-dropdown:hover .navbar-dropdown {
+    //animation: navAnim .2s ease-in-out;
+}
+
+@keyframes navAnim {
+  0% {
+    display: none;
+    opacity: 0;
+    height: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    height: 100%;
+  }
+}

@@ -13,15 +13,13 @@ actions:
       #style: "info"
       #blank: false
     - title: " 2019 Sponsorship Packet"
-      href: "https://drive.google.com/open?id=1BZ1BHePTxTGrvTFHCgmu2J6DsGFHBZn"
+      href: "https://drive.google.com/open?id=1BZ1BHePTxTGrvTFHCgmu2J6DsGFHBZnt"
       style: "info"
       icon": "fa-external-link-alt"
       blank: true
 list:
     - title: KDE Direct
       image: kde.png
-    - title: Apple
-      image: apple.png
 levels:
     - name: platinum
       title: Platinum
@@ -38,7 +36,6 @@ levels:
           - item: Acknowledgement on our team website and at social events
           - item: Logo on the Sponsorship Packet
           - item: Priority for social meda spotlights
-          - item: Personal letter of appreciation and direct communication to club members
     - name: gold
       title: Gold
       amount: 1000

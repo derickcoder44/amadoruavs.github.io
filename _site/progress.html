@@ -142,137 +142,262 @@
 <br />
 
 <div class="container">
+    <!--{ assign div = site.data.progress.components.size | divided_by: 3 %}-->
+    <!--{ for i in (0..div) %}-->
+    
+    
     
     
     <div class="columns">
         
         
-        
-        
-        <div class="column is-4">
+        <div class="column">
+            
             <div class="card" style="border-radius: 10px">
                 <div class="card-content">
                     <p class="title">Motors + Propellers</p>
                     <p class="subtitle">Motors are what make a multicopter go, and our hexacopter needs 6 of them!</p>
                     <div class="tags has-addons">
                         <span class="tag is-info is-large">$380</span>
-                        
                         <span class="tag is-danger is-large">Todo</span>
-                        
                     </div>
                 </div>
             </div>
+            
         </div>
-        
-        
-        
-        <div class="column is-4">
-            <div class="card" style="border-radius: 10px">
-                <div class="card-content">
-                    <p class="title">Speed Controllers</p>
-                    <p class="subtitle">Electronic Speed Controllers (ESCs) provide power to the motors and allow fine speed adjustments.</p>
-                    <div class="tags has-addons">
-                        <span class="tag is-info is-large">$240</span>
-                        
-                        <span class="tag is-danger is-large">Todo</span>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        <div class="column is-4">
-            <div class="card" style="border-radius: 10px">
-                <div class="card-content">
-                    <p class="title">Batteries</p>
-                    <p class="subtitle">Of course, the drone won't fly without a power source.</p>
-                    <div class="tags has-addons">
-                        <span class="tag is-info is-large">$300</span>
-                        
-                        <span class="tag is-danger is-large">Todo</span>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-    </div>
-    
-    <div class="columns">
-        
-        
-        
-        
-        <div class="column is-4">
+        <div class="column">
+            
             <div class="card" style="border-radius: 10px">
                 <div class="card-content">
                     <p class="title">Flight Controller</p>
                     <p class="subtitle">This microcontroller handles self-leveling of the drone as well as navigation commands, gps, sensors etc.</p>
                     <div class="tags has-addons">
                         <span class="tag is-info is-large">$230</span>
-                        
                         <span class="tag is-success is-large">Done</span>
-                        
                     </div>
                 </div>
             </div>
+            
         </div>
+            
+
+
+        <!--<div class="column is-4">-->
+            <!--<div class="card" style="border-radius: 10px">-->
+                <!--<div class="card-content">-->
+                    <!--<p class="title">Motors + Propellers</p>-->
+                    <!--<p class="subtitle">Motors are what make a multicopter go, and our hexacopter needs 6 of them!</p>-->
+                    <!--<div class="tags has-addons">-->
+                        <!--<span class="tag is-info is-large">$380</span>-->
+                        <!--{ if site.data.progress.components[j].completed %}-->
+                        <!--<span class="tag is-success is-large">Done</span>-->
+                        <!--{ else %}-->
+                        <!--<span class="tag is-danger is-large">Todo</span>-->
+                        <!--{ endif %}-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    
+    <div class="columns">
         
         
+        <div class="column">
+            
+            <div class="card" style="border-radius: 10px">
+                <div class="card-content">
+                    <p class="title">Speed Controllers</p>
+                    <p class="subtitle">Electronic Speed Controllers (ESCs) provide power to the motors and allow fine speed adjustments.</p>
+                    <div class="tags has-addons">
+                        <span class="tag is-info is-large">$240</span>
+                        <span class="tag is-danger is-large">Todo</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="column">
+            
+        </div>
+            
+
+
+        <!--<div class="column is-4">-->
+            <!--<div class="card" style="border-radius: 10px">-->
+                <!--<div class="card-content">-->
+                    <!--<p class="title">Speed Controllers</p>-->
+                    <!--<p class="subtitle">Electronic Speed Controllers (ESCs) provide power to the motors and allow fine speed adjustments.</p>-->
+                    <!--<div class="tags has-addons">-->
+                        <!--<span class="tag is-info is-large">$240</span>-->
+                        <!--{ if site.data.progress.components[j].completed %}-->
+                        <!--<span class="tag is-success is-large">Done</span>-->
+                        <!--{ else %}-->
+                        <!--<span class="tag is-danger is-large">Todo</span>-->
+                        <!--{ endif %}-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    
+    <div class="columns">
         
-        <div class="column is-4">
+        
+        <div class="column">
+            
+            <div class="card" style="border-radius: 10px">
+                <div class="card-content">
+                    <p class="title">Batteries</p>
+                    <p class="subtitle">Of course, the drone won't fly without a power source.</p>
+                    <div class="tags has-addons">
+                        <span class="tag is-info is-large">$300</span>
+                        <span class="tag is-danger is-large">Todo</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="column">
+            
+        </div>
+            
+
+
+        <!--<div class="column is-4">-->
+            <!--<div class="card" style="border-radius: 10px">-->
+                <!--<div class="card-content">-->
+                    <!--<p class="title">Batteries</p>-->
+                    <!--<p class="subtitle">Of course, the drone won't fly without a power source.</p>-->
+                    <!--<div class="tags has-addons">-->
+                        <!--<span class="tag is-info is-large">$300</span>-->
+                        <!--{ if site.data.progress.components[j].completed %}-->
+                        <!--<span class="tag is-success is-large">Done</span>-->
+                        <!--{ else %}-->
+                        <!--<span class="tag is-danger is-large">Todo</span>-->
+                        <!--{ endif %}-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    
+    <div class="columns">
+        
+        
+        <div class="column">
+            
             <div class="card" style="border-radius: 10px">
                 <div class="card-content">
                     <p class="title">Onboard Computer</p>
                     <p class="subtitle">The onboard companion computer works with the flight controller to perform advanced vision processing and obstacle avoidance.</p>
                     <div class="tags has-addons">
                         <span class="tag is-info is-large">$140</span>
-                        
                         <span class="tag is-danger is-large">Todo</span>
-                        
                     </div>
                 </div>
             </div>
+            
         </div>
+        <div class="column">
+            
+        </div>
+            
+
+
+        <!--<div class="column is-4">-->
+            <!--<div class="card" style="border-radius: 10px">-->
+                <!--<div class="card-content">-->
+                    <!--<p class="title">Flight Controller</p>-->
+                    <!--<p class="subtitle">This microcontroller handles self-leveling of the drone as well as navigation commands, gps, sensors etc.</p>-->
+                    <!--<div class="tags has-addons">-->
+                        <!--<span class="tag is-info is-large">$230</span>-->
+                        <!--{ if site.data.progress.components[j].completed %}-->
+                        <!--<span class="tag is-success is-large">Done</span>-->
+                        <!--{ else %}-->
+                        <!--<span class="tag is-danger is-large">Todo</span>-->
+                        <!--{ endif %}-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    
+    <div class="columns">
         
         
-        
-        <div class="column is-4">
+        <div class="column">
+            
             <div class="card" style="border-radius: 10px">
                 <div class="card-content">
                     <p class="title">Camera + Gimbal</p>
                     <p class="subtitle">A high resolution camera is used for ground object detection and classification.</p>
                     <div class="tags has-addons">
                         <span class="tag is-info is-large">$400</span>
-                        
                         <span class="tag is-danger is-large">Todo</span>
-                        
                     </div>
                 </div>
             </div>
+            
         </div>
-        
-        
+        <div class="column">
+            
+        </div>
+            
+
+
+        <!--<div class="column is-4">-->
+            <!--<div class="card" style="border-radius: 10px">-->
+                <!--<div class="card-content">-->
+                    <!--<p class="title">Onboard Computer</p>-->
+                    <!--<p class="subtitle">The onboard companion computer works with the flight controller to perform advanced vision processing and obstacle avoidance.</p>-->
+                    <!--<div class="tags has-addons">-->
+                        <!--<span class="tag is-info is-large">$140</span>-->
+                        <!--{ if site.data.progress.components[j].completed %}-->
+                        <!--<span class="tag is-success is-large">Done</span>-->
+                        <!--{ else %}-->
+                        <!--<span class="tag is-danger is-large">Todo</span>-->
+                        <!--{ endif %}-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
     </div>
     
     <div class="columns">
         
         
-        
-        
-        
-        
-        
-        
-        
+        <div class="column">
+            
+        </div>
+        <div class="column">
+            
+        </div>
+            
+
+
+        <!--<div class="column is-4">-->
+            <!--<div class="card" style="border-radius: 10px">-->
+                <!--<div class="card-content">-->
+                    <!--<p class="title">Camera + Gimbal</p>-->
+                    <!--<p class="subtitle">A high resolution camera is used for ground object detection and classification.</p>-->
+                    <!--<div class="tags has-addons">-->
+                        <!--<span class="tag is-info is-large">$400</span>-->
+                        <!--{ if site.data.progress.components[j].completed %}-->
+                        <!--<span class="tag is-success is-large">Done</span>-->
+                        <!--{ else %}-->
+                        <!--<span class="tag is-danger is-large">Todo</span>-->
+                        <!--{ endif %}-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
     </div>
     
+    <!--{ endfor %}-->
 </div>
 
-	<!--<footer class="footer hero banner-gradient">
+        <footer class="footer hero banner-gradient">
     <div class="container">
         <div class="columns">
             <div class="column is-one-third"></div>
@@ -308,6 +433,6 @@
         </div>
     </div>
 </footer>
--->
+
     </body>
 </html>

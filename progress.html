@@ -33,31 +33,63 @@ subheading:
 <br />
 
 <div class="container">
-    {% assign div = site.data.progress.components.size | divided_by: 3 %}
-    {% for i in (0..div) %}
+    <!--{ assign div = site.data.progress.components.size | divided_by: 3 %}-->
+    <!--{ for i in (0..div) %}-->
+    {% assign completed = site.data.progress.components | where: "completed", true %}
+    {% assign todo = site.data.progress.components | where: "completed", false %}
+    {% assign nrows = completed.size | at_least: todo.size %}
+    {% for j in (0..nrows) %}
     <div class="columns">
         {% assign starti = i | times: 3 %}
         {% assign endi = starti | plus: 2 %}
-        {% for j in (starti..endi) %}
-        {% if site.data.progress.components[j] %}
-        <div class="column is-4">
+        <div class="column">
+            {% if todo[j] %}
             <div class="card" style="border-radius: 10px">
                 <div class="card-content">
-                    <p class="title">{{ site.data.progress.components[j].title }}</p>
-                    <p class="subtitle">{{ site.data.progress.components[j].description }}</p>
+                    <p class="title">{{ todo[j].title }}</p>
+                    <p class="subtitle">{{ todo[j].description }}</p>
                     <div class="tags has-addons">
-                        <span class="tag is-info is-large">${{ site.data.progress.components[j].price }}</span>
-                        {% if site.data.progress.components[j].completed %}
-                        <span class="tag is-success is-large">Done</span>
-                        {% else %}
+                        <span class="tag is-info is-large">${{ todo[j].price }}</span>
                         <span class="tag is-danger is-large">Todo</span>
-                        {% endif %}
                     </div>
                 </div>
             </div>
+            {% endif %}
         </div>
-        {% endif %}
-        {% endfor %}
+        <div class="column">
+            {% if completed[j] %}
+            <div class="card" style="border-radius: 10px">
+                <div class="card-content">
+                    <p class="title">{{ completed[j].title }}</p>
+                    <p class="subtitle">{{ completed[j].description }}</p>
+                    <div class="tags has-addons">
+                        <span class="tag is-info is-large">${{ completed[j].price }}</span>
+                        <span class="tag is-success is-large">Done</span>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+            
+
+
+        <!--<div class="column is-4">-->
+            <!--<div class="card" style="border-radius: 10px">-->
+                <!--<div class="card-content">-->
+                    <!--<p class="title">{{ site.data.progress.components[j].title }}</p>-->
+                    <!--<p class="subtitle">{{ site.data.progress.components[j].description }}</p>-->
+                    <!--<div class="tags has-addons">-->
+                        <!--<span class="tag is-info is-large">${{ site.data.progress.components[j].price }}</span>-->
+                        <!--{ if site.data.progress.components[j].completed %}-->
+                        <!--<span class="tag is-success is-large">Done</span>-->
+                        <!--{ else %}-->
+                        <!--<span class="tag is-danger is-large">Todo</span>-->
+                        <!--{ endif %}-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
     </div>
     {% endfor %}
+    <!--{ endfor %}-->
 </div>

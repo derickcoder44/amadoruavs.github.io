@@ -1,0 +1,16 @@
+<div class="pricing-table is-horizontal">
+	{% for level in site.data.sponsors.levels %}
+	<div class="pricing-plan">
+        <div class="plan-header"><p class="is-size-2 text-{{ level.name }}">{{ level.title }}</p></div>
+        <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>{{ level.amount }}</span></div>
+		<div class="plan-items">
+			{% for benefit in level.benefits %}
+			<div class="plan-item">{{ benefit.item }}</div>
+			{% endfor %}
+		</div>
+		<!--<div class="plan-footer">-->
+			<!--<button class="button is-fullwidth" disabled="disabled">Current plan</button>-->
+		<!--</div>-->
+	</div>
+	{% endfor %}
+</div>
