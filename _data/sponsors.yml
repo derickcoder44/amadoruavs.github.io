@@ -50,7 +50,6 @@ levels:
           - item: Medium logo on the competition poster and team apparel
           - item: Acknowledgement on our team website and at social events
           - item: Logo on the Sponsorship Packet
-          - item: Personal letter of appreciation
     - name: silver
       title: Silver
       amount: 500
@@ -65,7 +64,6 @@ levels:
           - item: Medium logo on the competition poster and team apparel
           - item: Acknowledgement on our team website w/ logo and link
           - item: Logo on the Sponsorship Packet
-          - item: Personal letter of appreciation
     - name: bronze
       title: Bronze
       amount: 250
@@ -79,4 +77,3 @@ levels:
           - item: Small logo on the competition poster and team apparel
           - item: Acknowledgement on our team website w/ logo and link
           - item: Logo on the Sponsorship Packet
-          - item: Personal letter of appreciation

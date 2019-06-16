@@ -2,7 +2,7 @@
 	{% for level in site.data.sponsors.levels %}
 	<div class="pricing-plan">
         <div class="plan-header"><p class="is-size-2 text-{{ level.name }}">{{ level.title }}</p></div>
-        <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>{{ level.amount }}</span></div>
+        <div class="plan-price"><span class="plan-price-amount"><span class="plan-price-currency">$</span>{{ level.amount }}+</span></div>
 		<div class="plan-items">
 			{% for benefit in level.benefits %}
 			<div class="plan-item">{{ benefit.item }}</div>
