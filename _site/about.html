@@ -8,6 +8,7 @@
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
         <!-- <script defer src="https://use.fontawesome.com/release/v5.3.1/js/all.js"></script> -->
         <script async src="/assets/js/main.js"></script>
+        <!--<script src="/assets/js/bulmajs/bulma.js"></script>-->
         <link rel="stylesheet" href="/assets/css/styles.css">
         <link rel="icon" type="image/ico" href="/assets/images/favicon.ico">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -119,7 +120,50 @@
     </div>
 </nav>
 
-        <section class="hero banner-gradient">
+        <svg id="fader">
+            <!--<img src="/assets/images/logo-clearbg.svg"></img>-->
+        </svg>
+        <script>
+            if (window.AnimationEvent) {
+                var fader = document.getElementById('fader');
+                fader.classList.add('fade-out');
+
+                document.addEventListener('DOMContentLoaded', function() {
+                    var anchors = document.getElementsByTagName('a');
+
+                    for (var idx=0; idx<anchors.length; idx+=1) {
+                        if (anchors[idx].hostname !== window.location.hostname) {
+                            continue;
+                        }
+                        if (anchors[idx].href.includes("#")) {
+                            continue;
+                        }
+                        anchors[idx].addEventListener('click', function(event) {
+                            var fader = document.getElementById('fader'),
+                                anchor = event.currentTarget;
+
+                            var listener = function() {
+                                window.location = anchor.href;
+                                fader.removeEventListener('animationend', listener);
+                            };
+                            fader.addEventListener('animationend', listener);
+
+                            event.preventDefault();
+                            fader.classList.add('fade-in');
+                        });
+                    }
+                });
+
+                window.addEventListener('pageshow', function (event) {
+                    if (!event.persisted) {
+                        return;
+                    }
+                    var fader = document.getElementById('fader');
+                    fader.classList.remove('fade-in');
+                });
+            }
+        </script>
+                    <section class="hero banner-gradient">
     <div class="hero-body">
         <div class="container">
             <div class="columns is-mobile is-centered">
@@ -146,20 +190,22 @@
             </div>
             <div class="column has-text-centered">
                 <h1 class="title is-2">About Us</h1>
-                <p class="is-size-4">AmadorUAVs is a club dedicated to the advancement and testing of autonomous UAV (Unmanned Aerial Vehicle) systems. We compete in a variety of both high school and collegiate level events, notably the AUVSI SUAS competition, to demonstrate the true capability of this innovative technology.</p>
+                <p class="is-size-4">AmadorUAVs is a club at Amador Valley High School in Pleasanton, CA.  This club was formed in 2018 with the intent of developing Unmanned Aerial Vehicles (UAVs).  We plan to compete in the upcoming 2020/2021  <a href="http://www.auvsi-suas.org" target="_blank">AUVSI Student Unmanned Aerial Systems</a>  international competition,  and we are working hard to aquire the funds and develop a drone.
+</p>
             </div>
         </div>
         
     </div>
 </section>
 
-<section class="section" id="blockOur UAV">
+<section class="section" id="blockOur UAV Journey">
     <div class="container">
         
         <div class="columns">
             <div class="column has-text-centered">
-                <h1 class="title is-2">Our UAV</h1>
-                <p class="is-size-4">Ever since our club was officially established in 2018, our team has been hard at work advancing autonomous robotics and flight. Our first prototype drone, Micron, was designed and built entirely by high school students.</p>
+                <h1 class="title is-2">Our UAV Journey</h1>
+                <p class="is-size-4">Starting in 2018, we developed multiple prototype airplanes before switching to multicopters (drones). Since then, we have designed and constructed several versions of our Micron quadcopter. We are currently refining and upgrading Micron to be fit for the competition.  <a href="/timeline.html">Learn more.</a>
+</p>
             </div>
             <div class="column">
                 <figure class="image">
@@ -174,7 +220,7 @@
 
 
 
-        <footer class="footer hero banner-gradient">
+                    <footer class="footer hero banner-gradient">
     <div class="container">
         <div class="columns">
             <div class="column is-one-third"></div>
@@ -200,7 +246,7 @@
                 </a>
             </div>
             <div class="column has-text-centered">
-                <a class="button is-large is-rounded is-outlined is-inverted is-primary" href="https://www.facebook.com/amadoruavsclub">
+                <a class="button is-large is-rounded is-outlined is-inverted is-primary" href="https://www.medium.com/@AmadorUAVs">
                     <span class="icon is-medium">
                         <i class="fab fa-medium"></i>
                     </span>

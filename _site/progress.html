@@ -8,6 +8,7 @@
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
         <!-- <script defer src="https://use.fontawesome.com/release/v5.3.1/js/all.js"></script> -->
         <script async src="/assets/js/main.js"></script>
+        <!--<script src="/assets/js/bulmajs/bulma.js"></script>-->
         <link rel="stylesheet" href="/assets/css/styles.css">
         <link rel="icon" type="image/ico" href="/assets/images/favicon.ico">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -119,7 +120,50 @@
     </div>
 </nav>
 
-        <section class="hero banner-gradient is-medium">
+        <svg id="fader">
+            <!--<img src="/assets/images/logo-clearbg.svg"></img>-->
+        </svg>
+        <script>
+            if (window.AnimationEvent) {
+                var fader = document.getElementById('fader');
+                fader.classList.add('fade-out');
+
+                document.addEventListener('DOMContentLoaded', function() {
+                    var anchors = document.getElementsByTagName('a');
+
+                    for (var idx=0; idx<anchors.length; idx+=1) {
+                        if (anchors[idx].hostname !== window.location.hostname) {
+                            continue;
+                        }
+                        if (anchors[idx].href.includes("#")) {
+                            continue;
+                        }
+                        anchors[idx].addEventListener('click', function(event) {
+                            var fader = document.getElementById('fader'),
+                                anchor = event.currentTarget;
+
+                            var listener = function() {
+                                window.location = anchor.href;
+                                fader.removeEventListener('animationend', listener);
+                            };
+                            fader.addEventListener('animationend', listener);
+
+                            event.preventDefault();
+                            fader.classList.add('fade-in');
+                        });
+                    }
+                });
+
+                window.addEventListener('pageshow', function (event) {
+                    if (!event.persisted) {
+                        return;
+                    }
+                    var fader = document.getElementById('fader');
+                    fader.classList.remove('fade-in');
+                });
+            }
+        </script>
+                    <section class="hero banner-gradient is-medium">
     <div class="hero-body">
         <div class="columns is-mobile is-centered">
             <div class="column">
@@ -398,7 +442,7 @@
     <!--{ endfor %}-->
 </div>
 
-        <footer class="footer hero banner-gradient">
+                    <footer class="footer hero banner-gradient">
     <div class="container">
         <div class="columns">
             <div class="column is-one-third"></div>
@@ -424,7 +468,7 @@
                 </a>
             </div>
             <div class="column has-text-centered">
-                <a class="button is-large is-rounded is-outlined is-inverted is-primary" href="https://www.facebook.com/amadoruavsclub">
+                <a class="button is-large is-rounded is-outlined is-inverted is-primary" href="https://www.medium.com/@AmadorUAVs">
                     <span class="icon is-medium">
                         <i class="fab fa-medium"></i>
                     </span>

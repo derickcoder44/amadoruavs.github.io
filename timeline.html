@@ -1,0 +1,24 @@
+---
+layout: default
+title: Timeline | AmadorUAVs
+heading: Timeline
+subheading: Where we've been, are, and are headed!
+---
+{% include banner.html title=page.heading subtitle=page.subheading %}
+
+<br />
+<div class="columns is-mobile is-centered">
+    <div class="column">
+        <div class="timeline is-centered">
+            <header class="timeline-header">
+                <span class="tag is-medium is-primary">{{ site.data.timeline.now }}</span>
+            </header>
+            {% for event in site.data.timeline.events %}
+            {% include timeline_event.html date=event.date blurb=event.blurb %}
+            {% endfor %}
+            <div class="timeline-header">
+                <span class="tag is-medium is-primary">{{ site.data.timeline.start }}</span>
+            </div>
+        </div>
+    </div>
+</div>

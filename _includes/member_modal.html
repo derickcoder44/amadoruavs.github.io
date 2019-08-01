@@ -1,0 +1,35 @@
+<div id="modal-{{ include.username }}" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">{{ include.name }}</p>
+        </header>
+        <section class="modal-card-body">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <figure class="image is-1by1 member-profile"><img src="{{ include.image }}" alt="{{ include.name }}"></figure>
+                </div>
+                <div class="column is-6">
+                    <p class="title is-3">{{ include.name }}</p>
+                    <p class="subtitle is-4">{{ include.position }}</p>
+                    <p>{{ include.blurb }}</p>
+                </div>
+        </section>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script>
+/*var modal_{{ include.username }} = Bulma.create('modal', {
+    element: document.querySelector('#modal-{{ include.username }}')
+});*/
+document.getElementById("member-card-{{ include.username }}").onclick = function() {
+    document.getElementById("modal-{{ include.username }}").classList.add("is-active");
+    document.getElementById("modal-{{ include.username }}").querySelector(".modal-close").onclick = function() {
+        document.getElementById("modal-{{ include.username }}").classList.remove("is-active");
+    };
+    document.getElementById("modal-{{ include.username }}").querySelector(".modal-background").onclick = function() {
+        document.getElementById("modal-{{ include.username }}").classList.remove("is-active");
+    };
+};
+</script>

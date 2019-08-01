@@ -1,54 +1,66 @@
 - name: Ishan Duriseti
+  username: iduriseti
   division: Electromechanical
   position: Mechanical VP
   image: /assets/images/members/ishan.webp
   email: iduriseti@gmail.com
 - name: Kai Gottschalk
+  username: kgottschalk
   division: Electromechanical
   position: Electrical VP
   image: /assets/images/members/kai.webp
   email: amkkproductions@gmail.com
 - name: Kalyan Sriram
+  username: ksriram
   division: Software
   position: Software VP
   image: /assets/images/members/placeholder.webp
   email: coder.kalyan@gmail.com
+  #blurb: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit non nibh sit amet varius. Nulla facilisi. Mauris posuere dolor ac lobortis ornare. Nullam elementum lorem in nisl lobortis, eget semper neque placerat. Suspendisse suscipit est ac libero pretium pretium. Morbi sagittis sem neque, nec fringilla metus efficitur id. Morbi sed sapien lectus. Sed vel augue risus. Praesent bibendum lacinia felis, sit amet efficitur tellus ultrices in. 
 - name: Marie Lee
+  username: mlee
   division: Business
   position: Business VP
   image: /assets/images/members/marie.webp
   # email: itsmarielee@gmail.com
 - name: Edward Ding
+  username: eding
   division: Business
   position: Treasurer
   image: /assets/images/members/placeholder.webp
   # email: kalsrir@amadoruavs.com
 - name: Frank Yu
+  username: fyu
   division: Electromechanical
   position: Physics
   image: /assets/images/members/frank.webp
   email: ironwolf20042004@gmail.com
 - name: Vincent Wang
+  username: vwang
   division: Software
   position: Image Processing
   image: /assets/images/members/vincent.webp
   email: vwangsf@gmail.com
 - name: Derick Mathews
+  username: dmathews
   division: Software
   position: Autopilot
   image: /assets/images/members/derick.webp
   email: derickdennismathews@gmail.com
 - name: Ethan Apalis
+  username: eapalis
   division: Business
   position: Fundraising
   image: /assets/images/members/placeholder.webp
   # email: kalsrir@amadoruavs.com
 - name: Sungje Park
+  username: spark
   division: Business
   position: Management
   image: /assets/images/members/placeholder.webp
   email: sungje.park123@gmail.com
 - name: Sri Kondapalli
+  username: skondapalli
   division: Software
   position: Obstacle Avoidance
   image: /assets/images/members/placeholder.webp

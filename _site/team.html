@@ -8,6 +8,7 @@
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"> -->
         <!-- <script defer src="https://use.fontawesome.com/release/v5.3.1/js/all.js"></script> -->
         <script async src="/assets/js/main.js"></script>
+        <!--<script src="/assets/js/bulmajs/bulma.js"></script>-->
         <link rel="stylesheet" href="/assets/css/styles.css">
         <link rel="icon" type="image/ico" href="/assets/images/favicon.ico">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -119,7 +120,50 @@
     </div>
 </nav>
 
-        <section class="hero banner-gradient 2">
+        <svg id="fader">
+            <!--<img src="/assets/images/logo-clearbg.svg"></img>-->
+        </svg>
+        <script>
+            if (window.AnimationEvent) {
+                var fader = document.getElementById('fader');
+                fader.classList.add('fade-out');
+
+                document.addEventListener('DOMContentLoaded', function() {
+                    var anchors = document.getElementsByTagName('a');
+
+                    for (var idx=0; idx<anchors.length; idx+=1) {
+                        if (anchors[idx].hostname !== window.location.hostname) {
+                            continue;
+                        }
+                        if (anchors[idx].href.includes("#")) {
+                            continue;
+                        }
+                        anchors[idx].addEventListener('click', function(event) {
+                            var fader = document.getElementById('fader'),
+                                anchor = event.currentTarget;
+
+                            var listener = function() {
+                                window.location = anchor.href;
+                                fader.removeEventListener('animationend', listener);
+                            };
+                            fader.addEventListener('animationend', listener);
+
+                            event.preventDefault();
+                            fader.classList.add('fade-in');
+                        });
+                    }
+                });
+
+                window.addEventListener('pageshow', function (event) {
+                    if (!event.persisted) {
+                        return;
+                    }
+                    var fader = document.getElementById('fader');
+                    fader.classList.remove('fade-in');
+                });
+            }
+        </script>
+                    <section class="hero banner-gradient 2">
     <div class="hero-body has-text-centered">
         <div class="columns is-mobile is-centered">
             <div class="column">
@@ -143,7 +187,7 @@
         <div class="columns">
             
             <div class="column is-3">
-                <div class=""> <!--member-card-->
+                <div class="member-card" id="member-card-iduriseti"> <!--member-card-->
                     <div class=card-image">
                         <figure class="image is-1by1">
                             <img class="member-profile" src="/assets/images/members/ishan.webp" alt="Ishan Duriseti">
@@ -155,9 +199,45 @@
                     </div>
                 </div>
             </div>
+            <div id="modal-iduriseti" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Ishan Duriseti</p>
+        </header>
+        <section class="modal-card-body">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <figure class="image is-1by1 member-profile"><img src="/assets/images/members/ishan.webp" alt="Ishan Duriseti"></figure>
+                </div>
+                <div class="column is-6">
+                    <p class="title is-3">Ishan Duriseti</p>
+                    <p class="subtitle is-4">Mechanical VP</p>
+                    <p></p>
+                </div>
+        </section>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script>
+/*var modal_iduriseti = Bulma.create('modal', {
+    element: document.querySelector('#modal-iduriseti')
+});*/
+document.getElementById("member-card-iduriseti").onclick = function() {
+    document.getElementById("modal-iduriseti").classList.add("is-active");
+    document.getElementById("modal-iduriseti").querySelector(".modal-close").onclick = function() {
+        document.getElementById("modal-iduriseti").classList.remove("is-active");
+    };
+    document.getElementById("modal-iduriseti").querySelector(".modal-background").onclick = function() {
+        document.getElementById("modal-iduriseti").classList.remove("is-active");
+    };
+};
+</script>
+
             
             <div class="column is-3">
-                <div class=""> <!--member-card-->
+                <div class="member-card" id="member-card-kgottschalk"> <!--member-card-->
                     <div class=card-image">
                         <figure class="image is-1by1">
                             <img class="member-profile" src="/assets/images/members/kai.webp" alt="Kai Gottschalk">
@@ -169,9 +249,45 @@
                     </div>
                 </div>
             </div>
+            <div id="modal-kgottschalk" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Kai Gottschalk</p>
+        </header>
+        <section class="modal-card-body">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <figure class="image is-1by1 member-profile"><img src="/assets/images/members/kai.webp" alt="Kai Gottschalk"></figure>
+                </div>
+                <div class="column is-6">
+                    <p class="title is-3">Kai Gottschalk</p>
+                    <p class="subtitle is-4">Electrical VP</p>
+                    <p></p>
+                </div>
+        </section>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script>
+/*var modal_kgottschalk = Bulma.create('modal', {
+    element: document.querySelector('#modal-kgottschalk')
+});*/
+document.getElementById("member-card-kgottschalk").onclick = function() {
+    document.getElementById("modal-kgottschalk").classList.add("is-active");
+    document.getElementById("modal-kgottschalk").querySelector(".modal-close").onclick = function() {
+        document.getElementById("modal-kgottschalk").classList.remove("is-active");
+    };
+    document.getElementById("modal-kgottschalk").querySelector(".modal-background").onclick = function() {
+        document.getElementById("modal-kgottschalk").classList.remove("is-active");
+    };
+};
+</script>
+
             
             <div class="column is-3">
-                <div class=""> <!--member-card-->
+                <div class="member-card" id="member-card-fyu"> <!--member-card-->
                     <div class=card-image">
                         <figure class="image is-1by1">
                             <img class="member-profile" src="/assets/images/members/frank.webp" alt="Frank Yu">
@@ -183,6 +299,42 @@
                     </div>
                 </div>
             </div>
+            <div id="modal-fyu" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Frank Yu</p>
+        </header>
+        <section class="modal-card-body">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <figure class="image is-1by1 member-profile"><img src="/assets/images/members/frank.webp" alt="Frank Yu"></figure>
+                </div>
+                <div class="column is-6">
+                    <p class="title is-3">Frank Yu</p>
+                    <p class="subtitle is-4">Physics</p>
+                    <p></p>
+                </div>
+        </section>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script>
+/*var modal_fyu = Bulma.create('modal', {
+    element: document.querySelector('#modal-fyu')
+});*/
+document.getElementById("member-card-fyu").onclick = function() {
+    document.getElementById("modal-fyu").classList.add("is-active");
+    document.getElementById("modal-fyu").querySelector(".modal-close").onclick = function() {
+        document.getElementById("modal-fyu").classList.remove("is-active");
+    };
+    document.getElementById("modal-fyu").querySelector(".modal-background").onclick = function() {
+        document.getElementById("modal-fyu").classList.remove("is-active");
+    };
+};
+</script>
+
             
         </div>
     </div>
@@ -195,7 +347,7 @@
         <div class="columns">
             
             <div class="column is-3">
-                <div class=""> <!--member-card-->
+                <div class="member-card" id="member-card-ksriram"> <!--member-card-->
                     <div class=card-image">
                         <figure class="image is-1by1">
                             <img class="member-profile" src="/assets/images/members/placeholder.webp" alt="Kalyan Sriram">
@@ -207,9 +359,45 @@
                     </div>
                 </div>
             </div>
+            <div id="modal-ksriram" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Kalyan Sriram</p>
+        </header>
+        <section class="modal-card-body">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <figure class="image is-1by1 member-profile"><img src="/assets/images/members/placeholder.webp" alt="Kalyan Sriram"></figure>
+                </div>
+                <div class="column is-6">
+                    <p class="title is-3">Kalyan Sriram</p>
+                    <p class="subtitle is-4">Software VP</p>
+                    <p></p>
+                </div>
+        </section>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script>
+/*var modal_ksriram = Bulma.create('modal', {
+    element: document.querySelector('#modal-ksriram')
+});*/
+document.getElementById("member-card-ksriram").onclick = function() {
+    document.getElementById("modal-ksriram").classList.add("is-active");
+    document.getElementById("modal-ksriram").querySelector(".modal-close").onclick = function() {
+        document.getElementById("modal-ksriram").classList.remove("is-active");
+    };
+    document.getElementById("modal-ksriram").querySelector(".modal-background").onclick = function() {
+        document.getElementById("modal-ksriram").classList.remove("is-active");
+    };
+};
+</script>
+
             
             <div class="column is-3">
-                <div class=""> <!--member-card-->
+                <div class="member-card" id="member-card-vwang"> <!--member-card-->
                     <div class=card-image">
                         <figure class="image is-1by1">
                             <img class="member-profile" src="/assets/images/members/vincent.webp" alt="Vincent Wang">
@@ -221,9 +409,45 @@
                     </div>
                 </div>
             </div>
+            <div id="modal-vwang" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Vincent Wang</p>
+        </header>
+        <section class="modal-card-body">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <figure class="image is-1by1 member-profile"><img src="/assets/images/members/vincent.webp" alt="Vincent Wang"></figure>
+                </div>
+                <div class="column is-6">
+                    <p class="title is-3">Vincent Wang</p>
+                    <p class="subtitle is-4">Image Processing</p>
+                    <p></p>
+                </div>
+        </section>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script>
+/*var modal_vwang = Bulma.create('modal', {
+    element: document.querySelector('#modal-vwang')
+});*/
+document.getElementById("member-card-vwang").onclick = function() {
+    document.getElementById("modal-vwang").classList.add("is-active");
+    document.getElementById("modal-vwang").querySelector(".modal-close").onclick = function() {
+        document.getElementById("modal-vwang").classList.remove("is-active");
+    };
+    document.getElementById("modal-vwang").querySelector(".modal-background").onclick = function() {
+        document.getElementById("modal-vwang").classList.remove("is-active");
+    };
+};
+</script>
+
             
             <div class="column is-3">
-                <div class=""> <!--member-card-->
+                <div class="member-card" id="member-card-dmathews"> <!--member-card-->
                     <div class=card-image">
                         <figure class="image is-1by1">
                             <img class="member-profile" src="/assets/images/members/derick.webp" alt="Derick Mathews">
@@ -235,9 +459,45 @@
                     </div>
                 </div>
             </div>
+            <div id="modal-dmathews" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Derick Mathews</p>
+        </header>
+        <section class="modal-card-body">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <figure class="image is-1by1 member-profile"><img src="/assets/images/members/derick.webp" alt="Derick Mathews"></figure>
+                </div>
+                <div class="column is-6">
+                    <p class="title is-3">Derick Mathews</p>
+                    <p class="subtitle is-4">Autopilot</p>
+                    <p></p>
+                </div>
+        </section>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script>
+/*var modal_dmathews = Bulma.create('modal', {
+    element: document.querySelector('#modal-dmathews')
+});*/
+document.getElementById("member-card-dmathews").onclick = function() {
+    document.getElementById("modal-dmathews").classList.add("is-active");
+    document.getElementById("modal-dmathews").querySelector(".modal-close").onclick = function() {
+        document.getElementById("modal-dmathews").classList.remove("is-active");
+    };
+    document.getElementById("modal-dmathews").querySelector(".modal-background").onclick = function() {
+        document.getElementById("modal-dmathews").classList.remove("is-active");
+    };
+};
+</script>
+
             
             <div class="column is-3">
-                <div class=""> <!--member-card-->
+                <div class="member-card" id="member-card-skondapalli"> <!--member-card-->
                     <div class=card-image">
                         <figure class="image is-1by1">
                             <img class="member-profile" src="/assets/images/members/placeholder.webp" alt="Sri Kondapalli">
@@ -249,6 +509,42 @@
                     </div>
                 </div>
             </div>
+            <div id="modal-skondapalli" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Sri Kondapalli</p>
+        </header>
+        <section class="modal-card-body">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <figure class="image is-1by1 member-profile"><img src="/assets/images/members/placeholder.webp" alt="Sri Kondapalli"></figure>
+                </div>
+                <div class="column is-6">
+                    <p class="title is-3">Sri Kondapalli</p>
+                    <p class="subtitle is-4">Obstacle Avoidance</p>
+                    <p></p>
+                </div>
+        </section>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script>
+/*var modal_skondapalli = Bulma.create('modal', {
+    element: document.querySelector('#modal-skondapalli')
+});*/
+document.getElementById("member-card-skondapalli").onclick = function() {
+    document.getElementById("modal-skondapalli").classList.add("is-active");
+    document.getElementById("modal-skondapalli").querySelector(".modal-close").onclick = function() {
+        document.getElementById("modal-skondapalli").classList.remove("is-active");
+    };
+    document.getElementById("modal-skondapalli").querySelector(".modal-background").onclick = function() {
+        document.getElementById("modal-skondapalli").classList.remove("is-active");
+    };
+};
+</script>
+
             
         </div>
     </div>
@@ -261,7 +557,7 @@
         <div class="columns">
             
             <div class="column is-3">
-                <div class=""> <!--member-card-->
+                <div class="member-card" id="member-card-mlee"> <!--member-card-->
                     <div class=card-image">
                         <figure class="image is-1by1">
                             <img class="member-profile" src="/assets/images/members/marie.webp" alt="Marie Lee">
@@ -273,9 +569,45 @@
                     </div>
                 </div>
             </div>
+            <div id="modal-mlee" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Marie Lee</p>
+        </header>
+        <section class="modal-card-body">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <figure class="image is-1by1 member-profile"><img src="/assets/images/members/marie.webp" alt="Marie Lee"></figure>
+                </div>
+                <div class="column is-6">
+                    <p class="title is-3">Marie Lee</p>
+                    <p class="subtitle is-4">Business VP</p>
+                    <p></p>
+                </div>
+        </section>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script>
+/*var modal_mlee = Bulma.create('modal', {
+    element: document.querySelector('#modal-mlee')
+});*/
+document.getElementById("member-card-mlee").onclick = function() {
+    document.getElementById("modal-mlee").classList.add("is-active");
+    document.getElementById("modal-mlee").querySelector(".modal-close").onclick = function() {
+        document.getElementById("modal-mlee").classList.remove("is-active");
+    };
+    document.getElementById("modal-mlee").querySelector(".modal-background").onclick = function() {
+        document.getElementById("modal-mlee").classList.remove("is-active");
+    };
+};
+</script>
+
             
             <div class="column is-3">
-                <div class=""> <!--member-card-->
+                <div class="member-card" id="member-card-eding"> <!--member-card-->
                     <div class=card-image">
                         <figure class="image is-1by1">
                             <img class="member-profile" src="/assets/images/members/placeholder.webp" alt="Edward Ding">
@@ -287,9 +619,45 @@
                     </div>
                 </div>
             </div>
+            <div id="modal-eding" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Edward Ding</p>
+        </header>
+        <section class="modal-card-body">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <figure class="image is-1by1 member-profile"><img src="/assets/images/members/placeholder.webp" alt="Edward Ding"></figure>
+                </div>
+                <div class="column is-6">
+                    <p class="title is-3">Edward Ding</p>
+                    <p class="subtitle is-4">Treasurer</p>
+                    <p></p>
+                </div>
+        </section>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script>
+/*var modal_eding = Bulma.create('modal', {
+    element: document.querySelector('#modal-eding')
+});*/
+document.getElementById("member-card-eding").onclick = function() {
+    document.getElementById("modal-eding").classList.add("is-active");
+    document.getElementById("modal-eding").querySelector(".modal-close").onclick = function() {
+        document.getElementById("modal-eding").classList.remove("is-active");
+    };
+    document.getElementById("modal-eding").querySelector(".modal-background").onclick = function() {
+        document.getElementById("modal-eding").classList.remove("is-active");
+    };
+};
+</script>
+
             
             <div class="column is-3">
-                <div class=""> <!--member-card-->
+                <div class="member-card" id="member-card-eapalis"> <!--member-card-->
                     <div class=card-image">
                         <figure class="image is-1by1">
                             <img class="member-profile" src="/assets/images/members/placeholder.webp" alt="Ethan Apalis">
@@ -301,9 +669,45 @@
                     </div>
                 </div>
             </div>
+            <div id="modal-eapalis" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Ethan Apalis</p>
+        </header>
+        <section class="modal-card-body">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <figure class="image is-1by1 member-profile"><img src="/assets/images/members/placeholder.webp" alt="Ethan Apalis"></figure>
+                </div>
+                <div class="column is-6">
+                    <p class="title is-3">Ethan Apalis</p>
+                    <p class="subtitle is-4">Fundraising</p>
+                    <p></p>
+                </div>
+        </section>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script>
+/*var modal_eapalis = Bulma.create('modal', {
+    element: document.querySelector('#modal-eapalis')
+});*/
+document.getElementById("member-card-eapalis").onclick = function() {
+    document.getElementById("modal-eapalis").classList.add("is-active");
+    document.getElementById("modal-eapalis").querySelector(".modal-close").onclick = function() {
+        document.getElementById("modal-eapalis").classList.remove("is-active");
+    };
+    document.getElementById("modal-eapalis").querySelector(".modal-background").onclick = function() {
+        document.getElementById("modal-eapalis").classList.remove("is-active");
+    };
+};
+</script>
+
             
             <div class="column is-3">
-                <div class=""> <!--member-card-->
+                <div class="member-card" id="member-card-spark"> <!--member-card-->
                     <div class=card-image">
                         <figure class="image is-1by1">
                             <img class="member-profile" src="/assets/images/members/placeholder.webp" alt="Sungje Park">
@@ -315,13 +719,49 @@
                     </div>
                 </div>
             </div>
+            <div id="modal-spark" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title">Sungje Park</p>
+        </header>
+        <section class="modal-card-body">
+            <div class="columns is-vcentered">
+                <div class="column is-6">
+                    <figure class="image is-1by1 member-profile"><img src="/assets/images/members/placeholder.webp" alt="Sungje Park"></figure>
+                </div>
+                <div class="column is-6">
+                    <p class="title is-3">Sungje Park</p>
+                    <p class="subtitle is-4">Management</p>
+                    <p></p>
+                </div>
+        </section>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+
+<script>
+/*var modal_spark = Bulma.create('modal', {
+    element: document.querySelector('#modal-spark')
+});*/
+document.getElementById("member-card-spark").onclick = function() {
+    document.getElementById("modal-spark").classList.add("is-active");
+    document.getElementById("modal-spark").querySelector(".modal-close").onclick = function() {
+        document.getElementById("modal-spark").classList.remove("is-active");
+    };
+    document.getElementById("modal-spark").querySelector(".modal-background").onclick = function() {
+        document.getElementById("modal-spark").classList.remove("is-active");
+    };
+};
+</script>
+
             
         </div>
     </div>
 </section>
 
 
-        <footer class="footer hero banner-gradient">
+                    <footer class="footer hero banner-gradient">
     <div class="container">
         <div class="columns">
             <div class="column is-one-third"></div>
@@ -347,7 +787,7 @@
                 </a>
             </div>
             <div class="column has-text-centered">
-                <a class="button is-large is-rounded is-outlined is-inverted is-primary" href="https://www.facebook.com/amadoruavsclub">
+                <a class="button is-large is-rounded is-outlined is-inverted is-primary" href="https://www.medium.com/@AmadorUAVs">
                     <span class="icon is-medium">
                         <i class="fab fa-medium"></i>
                     </span>

@@ -15,7 +15,7 @@ subheading: Our hardworking team is comprised of many brilliant high school engi
         <div class="columns">
             {% for member in filtered_members %}
             <div class="column is-3">
-                <div class=""> <!--member-card-->
+                <div class="member-card" id="member-card-{{ member.username }}"> <!--member-card-->
                     <div class=card-image">
                         <figure class="image is-1by1">
                             <img class="member-profile" src="{{ member.image }}" alt="{{ member.name }}">
@@ -27,6 +27,8 @@ subheading: Our hardworking team is comprised of many brilliant high school engi
                     </div>
                 </div>
             </div>
+            {% include member_modal.html username=member.username name=member.name
+            image=member.image position=member.position blurb=member.blurb %}
             {% endfor %}
         </div>
     </div>
