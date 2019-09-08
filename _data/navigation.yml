@@ -7,6 +7,11 @@
 - name: Join
   link: /join.html
   external: false
+- name: Our UAVs
+  sublinks:
+      - name: Micron
+        link: /uavs/micron.html
+  external: false
 - name: Sponsorship Information
   sublinks:
       - name: Become a Sponsor
@@ -18,11 +23,11 @@
   external: false
 - name: Competition
   link: http://www.auvsi-suas.org
-  external: false
+  external: true
 - name: Blog
   link: https://medium.com/@AmadorUAVs
-  external: false
+  external: true
 - name: Source
   link: https://gitlab.com/avhs-suas
-  external: false
+  external: true
 

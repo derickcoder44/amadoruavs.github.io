@@ -1,0 +1,7 @@
+specs:
+    - summary: "Flight Speed"
+      value: "10.4 m/s"
+    - summary: "Reinforced Frame"
+      value: "Carbon Fiber"
+    - summary: "Flight Time"
+      value: "20 minutes"

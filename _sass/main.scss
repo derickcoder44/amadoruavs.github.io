@@ -239,4 +239,14 @@ html {
 
 .navbar-item {
     font-size: 14pt;
+
+    .active {
+        color: #3273dc;
+    }
+}
+
+.spec-card {
+    border: 1px solid #EEEEEE;
+    //margin: 10px;
+    border-radius: 4px;
 }

@@ -29,21 +29,9 @@
                             </div>
                         </div>
                     {% else %}
-                        {% if page.url == item.link %}
-                        <a class="navbar-item is-active" href="{{ item.link }}">
-                            {{ item.name }}
-                        </a>
-                        {% else %}
-                        <a class="navbar-item" href="{{ item.link }}">
-                            {{ item.name }}
-                        </a>
-                        {% endif %}
-
-                        {% if item.external %}
-                        <span style="vertical-align:sub;margin:auto;"class="icon is-large">
-                            <i class="fas fa-external-link-alt"></i>
-                        </span>
-                        {% endif %}
+                    <a class="navbar-item {% if item.link == page.url %}{% endif %}" href="{{ item.link }}" {% if item.external %} target="_blank" {% endif %}>
+                        {{ item.name }}
+                    </a>
                     {% endif %}
                 {% endfor %}
             </div>

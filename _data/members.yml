@@ -22,19 +22,18 @@
   division: Business
   position: Business VP
   image: /assets/images/members/marie.webp
-  # email: itsmarielee@gmail.com
+  email: itsmarielee@gmail.com
 - name: Edward Ding
   username: eding
   division: Business
   position: Treasurer
   image: /assets/images/members/placeholder.webp
-  # email: kalsrir@amadoruavs.com
-- name: Frank Yu
-  username: fyu
-  division: Electromechanical
-  position: Physics
-  image: /assets/images/members/frank.webp
-  email: ironwolf20042004@gmail.com
+#- name: Frank Yu
+  #username: fyu
+  #division: Electromechanical
+  #position: Physics
+  #image: /assets/images/members/frank.webp
+  #email: ironwolf20042004@gmail.com
 - name: Vincent Wang
   username: vwang
   division: Software
@@ -47,11 +46,11 @@
   position: Autopilot
   image: /assets/images/members/derick.webp
   email: derickdennismathews@gmail.com
-- name: Ethan Apalis
-  username: eapalis
-  division: Business
-  position: Fundraising
-  image: /assets/images/members/placeholder.webp
+#- name: Ethan Apalis
+  #username: eapalis
+  #division: Business
+  #position: Fundraising
+  #image: /assets/images/members/placeholder.webp
   # email: kalsrir@amadoruavs.com
 - name: Sungje Park
   username: spark
@@ -65,4 +64,8 @@
   position: Obstacle Avoidance
   image: /assets/images/members/placeholder.webp
   # email: kalsrir@amadoruavs.com
+- name: Arjun
+  username: arjun
+  division: Software
+  position: Vision
 
