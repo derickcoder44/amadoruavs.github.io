@@ -12,8 +12,28 @@ html {
     // font-family: Gilroy Light !important;
 // }
 
+.webp {
+    #sponsorHero {
+        background-image: url("/assets/images/sponsor-title.webp");
+    }
+
+    #homeHero {
+        background-image: url("/assets/images/home-title.webp");
+    }
+}
+
+.no-webp {
+    #sponsorHero {
+        background-image: url("/assets/images/sponsor-title.png");
+    }
+
+    #homeHero {
+        background-image: url("/assets/images/home-title.png");
+    }
+}
+
 #sponsorHero {
-    background-image: url("/assets/images/sponsor-title.webp");
+    //background-image: url("/assets/images/sponsor-title.webp");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -23,7 +43,7 @@ html {
 }
 
 #homeHero {
-    background-image: url("/assets/images/home-title.webp");
+    //background-image: url("/assets/images/home-title.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }

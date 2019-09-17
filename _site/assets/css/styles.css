@@ -1,15 +1,23 @@
 html {
   scroll-behavior: smooth; }
 
+.webp #sponsorHero {
+  background-image: url("/assets/images/sponsor-title.webp"); }
+.webp #homeHero {
+  background-image: url("/assets/images/home-title.webp"); }
+
+.no-webp #sponsorHero {
+  background-image: url("/assets/images/sponsor-title.png"); }
+.no-webp #homeHero {
+  background-image: url("/assets/images/home-title.png"); }
+
 #sponsorHero {
-  background-image: url("/assets/images/sponsor-title.webp");
   background-repeat: no-repeat;
   background-size: cover; }
   #sponsorHero h1 {
     color: white; }
 
 #homeHero {
-  background-image: url("/assets/images/home-title.webp");
   background-repeat: no-repeat;
   background-size: cover; }
 
