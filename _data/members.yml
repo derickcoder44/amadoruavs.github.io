@@ -1,26 +1,26 @@
 - name: Ishan Duriseti
   username: iduriseti
   division: Electromechanical
-  position: Mechanical VP
+  position: Mechanical Team Lead
   image: /assets/images/members/ishan.webp
   email: iduriseti@gmail.com
 - name: Kai Gottschalk
   username: kgottschalk
   division: Electromechanical
-  position: Electrical VP
+  position: Electrical Team Lead
   image: /assets/images/members/kai.webp
   email: amkkproductions@gmail.com
 - name: Kalyan Sriram
   username: ksriram
   division: Software
-  position: Software VP
+  position: Software Team Lead
   image: /assets/images/members/placeholder.webp
   email: coder.kalyan@gmail.com
   #blurb: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit non nibh sit amet varius. Nulla facilisi. Mauris posuere dolor ac lobortis ornare. Nullam elementum lorem in nisl lobortis, eget semper neque placerat. Suspendisse suscipit est ac libero pretium pretium. Morbi sagittis sem neque, nec fringilla metus efficitur id. Morbi sed sapien lectus. Sed vel augue risus. Praesent bibendum lacinia felis, sit amet efficitur tellus ultrices in. 
 - name: Marie Lee
   username: mlee
   division: Business
-  position: Business VP
+  position: Business Team Lead
   image: /assets/images/members/marie.webp
   email: itsmarielee@gmail.com
 - name: Edward Ding
@@ -28,12 +28,12 @@
   division: Business
   position: Treasurer
   image: /assets/images/members/placeholder.webp
-#- name: Frank Yu
-  #username: fyu
-  #division: Electromechanical
-  #position: Physics
-  #image: /assets/images/members/frank.webp
-  #email: ironwolf20042004@gmail.com
+- name: Frank Yu
+  username: fyu
+  division: Electromechanical
+  position: Physics
+  image: /assets/images/members/frank.webp
+  email: ironwolf20042004@gmail.com
 - name: Vincent Wang
   username: vwang
   division: Software
@@ -63,7 +63,6 @@
   division: Software
   position: Obstacle Avoidance
   image: /assets/images/members/placeholder.webp
-  # email: kalsrir@amadoruavs.com
 - name: Arjun
   username: arjun
   division: Software
