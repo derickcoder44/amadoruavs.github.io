@@ -17,9 +17,11 @@ subheading: Our hardworking team is comprised of many brilliant high school engi
             <div class="column is-3">
                 <div class="member-card" id="member-card-{{ member.username }}"> <!--member-card-->
                     <div class=card-image">
-                        <figure class="image is-1by1">
-                            <img class="member-profile" src="{{ member.image }}" alt="{{ member.name }}">
-                        </figure>
+                        <picture class="image is-1by1">
+                            <source class="member-profile" srcset="{{ member.image }}.webp" alt="{{ member.name }}" type="image/webp">
+                            <source class="member-profile" srcset="{{ member.image }}.png" alt="{{ member.name }}" type="image/png">
+                            <img class="member-profile" src="{{ member.image }}.png" alt="{{ member.name }}">
+                        </picture>
                     </div>
                     <div class="card-content">
                         <p class="title is-4 has-text-centered">{{ member.name }}</p>

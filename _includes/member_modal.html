@@ -7,7 +7,11 @@
         <section class="modal-card-body">
             <div class="columns is-vcentered">
                 <div class="column is-6">
-                    <figure class="image is-1by1 member-profile"><img src="{{ include.image }}" alt="{{ include.name }}"></figure>
+                    <picture class="image is-1by1 member-profile">
+                        <source srcset="{{ include.image }}.webp" alt="{{ include.name }}" type="image/webp">
+                        <source srcset="{{ include.image }}.png" alt="{{ include.name }}" type="image/png">
+                        <img src="{{ include.image }}.png" alt="{{ include.name }}">
+                    </picture>
                 </div>
                 <div class="column is-6">
                     <p class="title is-3">{{ include.name }}</p>
