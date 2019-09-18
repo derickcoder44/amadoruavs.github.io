@@ -1,12 +1,12 @@
 - name: Ishan Duriseti
   username: iduriseti
-  division: Electromechanical
+  division: Mechanical
   position: Mechanical Team Lead
   image: /assets/images/members/ishan
   email: iduriseti@gmail.com
 - name: Kai Gottschalk
   username: kgottschalk
-  division: Electromechanical
+  division: Electrical
   position: Electrical Team Lead
   image: /assets/images/members/kai
   email: amkkproductions@gmail.com
@@ -30,7 +30,7 @@
   image: /assets/images/members/placeholder
 - name: Frank Yu
   username: fyu
-  division: Electromechanical
+  division: Mechanical
   position: Physics
   image: /assets/images/members/frank
   email: ironwolf20042004@gmail.com

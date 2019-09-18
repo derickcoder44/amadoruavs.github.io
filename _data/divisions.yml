@@ -1,3 +1,8 @@
-- name: Electromechanical
+- name: Mechanical
+  description: Design and Manufacturing
+- name: Electrical
+  description: Wiring and PCB Design
 - name: Software
+  description: Autonomous Flight
 - name: Business
+  description: PR and Funding

@@ -3,9 +3,55 @@ layout: default
 title: Join | AmadorUAVs
 heading: Join Us!
 subheading: Interested in being a part of AmadorUAVs? Complete our diagnostic entry assignments to join!
+actions:
+    - title: "Intro Presentation"
+      href: "https://docs.google.com/presentation/d/1eui_WDvnFb9rsBoGqHhuz0Y6RgsDdLJYCVmAtATeqhY/edit#slide=id.g63588a4051_9_0"
+      style: "info"
+      blank: true
+    - title: "Entrance Assignments"
+      href: "https://drive.google.com/drive/u/0/folders/1kbeKVokoKtxYG2OLHWpfM9cCaHCQroCf"
+      style: "info"
+      blank: true
 ---
 
 {% include banner.html title=page.heading subtitle=page.subheading %}
 
-<br />
+<!--<section class="section" id="">-->
+<div class="container">
+    <div class="columns">
+        {% for division in site.data.divisions %}
+        <div class="column is-3">
+            <div class="member-card" id="division-card-{{ division.name }}">
+                <div class="card-content">
+                    <p class="title is-3 has-text-centered">{{ division.name }}</p>
+                </div>
+                <div class="card-image">
+                    <picture class="image is-1by1">
+                        <source class="member-profile" srcset="/assets/images/members/ishan.webp" alt="{{ division.name }}" type="image/webp">
+                        <source class="member-profile" srcset="/assets/images/members/ishan.png" alt="{{ division.name }}" type="image/png">
+                        <img class="member-profile" src="/assets/images/members/ishan.png" alt="{{ division.name }}">
+                    </picture>
+                </div>
+                <div class="card-content">
+                    <p class="subtitle is-5 has-text-centered">{{ division.description }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="container">
+    <div class="columns is-centered">
+        {% for action in page.actions %}
+        <div class="column is-2">
+            {% include button.html
+            href=action.href
+            blank=action.blank
+            title=action.title
+            style="info"
+            %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
 <br />

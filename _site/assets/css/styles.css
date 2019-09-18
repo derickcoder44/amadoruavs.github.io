@@ -43,7 +43,7 @@ html {
   min-height: 100vh; }
 
 .banner-gradient {
-  background-image: linear-gradient(to right, #FD6EC4, #7B73F4); }
+  background-image: linear-gradient(to right, #DC72FC, #603CE6 75%, #455CE2); }
 
 .footer {
   background-color: #DDDDDD !important; }
