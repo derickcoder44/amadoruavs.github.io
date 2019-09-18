@@ -1,8 +1,12 @@
 - name: Mechanical
   description: Design and Manufacturing
+  image: /assets/images/members/ishan
 - name: Electrical
   description: Wiring and PCB Design
+  image: /assets/images/members/kai
 - name: Software
   description: Autonomous Flight
+  image: /assets/images/members/vincent
 - name: Business
   description: PR and Funding
+  image: /assets/images/members/marie
