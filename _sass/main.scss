@@ -272,3 +272,11 @@ html {
     //margin: 10px;
     border-radius: 4px;
 }
+
+p .button {
+    box-shadow: 0 0 10px #555555;
+}
+
+a .button {
+    box-shadow: 0 0 10px #555555 !important;
+}

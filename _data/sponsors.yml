@@ -18,12 +18,16 @@ actions:
       icon: "fa-external-link-alt"
       blank: true
 list:
-    - title: KDE Direct
-      image: kde.png
+    #- title: KDE Direct
+      #image: kde.png
     - title: CUAV
       image: cuav.png
     - title: The Imaging Source
       image: tis.png
+    - title: JLCPCB
+      image: jlcpcb.png
+    - title: Fastsigns
+      image: fastsigns.png
 levels:
     - name: platinum
       title: Platinum

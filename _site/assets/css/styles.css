@@ -182,6 +182,12 @@ html {
   border: 1px solid #EEEEEE;
   border-radius: 4px; }
 
+p .button {
+  box-shadow: 0 0 10px #555555; }
+
+a .button {
+  box-shadow: 0 0 10px #555555 !important; }
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
