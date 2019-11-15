@@ -30,8 +30,8 @@ list:
       image: jlcpcb.png
     - title: Fastsigns
       image: fastsigns.png
-      #- title: RFDesign
-      #image: rfdesign.png
+    - title: RFDesign
+      image: rfdesign.png
 levels:
     - name: platinum
       title: Platinum
