@@ -32,6 +32,8 @@ list:
       image: fastsigns.png
     - title: RFDesign
       image: rfdesign.png
+    - title: Amador Valley High School PTSA
+      image: ptsa.png
 levels:
     - name: platinum
       title: Platinum
