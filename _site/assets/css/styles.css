@@ -188,6 +188,9 @@ p .button {
 a .button {
   box-shadow: 0 0 10px #555555 !important; }
 
+.division-section {
+  padding: 1rem 1.5rem !important; }
+
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }

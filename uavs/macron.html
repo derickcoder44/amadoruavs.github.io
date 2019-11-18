@@ -1,0 +1,25 @@
+---
+layout: default
+title: Macron | AmadorUAVs
+heading: Macron
+subheading: "Macron is our production/competition UAV"
+---
+
+{% include banner.html title=page.heading subtitle=page.subheading %}
+
+<div class="container">
+    <div class="columns is-centered">
+        {% for spec in site.data.uavs.macron.specs %}
+        <div class="column is-3">
+            <br />
+            <div class="spec-card">
+                <div class="card-content">
+                    <p class="title is-2 has-text-centered">{{ spec.value }}</p>
+                    <p class="subtitle is-5 has-text-centered">{{ spec.summary }}</p>
+                </div>
+            </div>
+            <br />
+        </div>
+        {% endfor %}
+    </div>
+</div>

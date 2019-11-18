@@ -8,12 +8,17 @@ subheading: Our hardworking team is comprised of many brilliant high school engi
 {% include banner.html title=page.heading subtitle=page.subheading %}
 
 {% for division in site.data.divisions %}
-<section class="section" id="division{{ division.name }}">
+<section class="section division-section" id="division{{ division.name }}">
     <div class="container">
         <h1 class="title">{{ division.name }}</h1>
         {% assign filtered_members = site.data.members | where: 'division', division.name %}
-        <div class="columns">
-            {% for member in filtered_members %}
+			{% assign numgroups = filtered_members.size | divided_by: 4 %}
+			{% for idxgroup in (0..numgroups) %}
+			<div class="columns">
+			{% for idx in (0..3) %}
+			{% assign real_idx = idxgroup | times: 4 | plus: idx %}
+			{% if real_idx < filtered_members.size %}
+			{% assign member = filtered_members[real_idx] %}
             <div class="column is-3">
                 <div class="member-card" id="member-card-{{ member.username }}"> <!--member-card-->
                     <div class=card-image">
@@ -31,8 +36,10 @@ subheading: Our hardworking team is comprised of many brilliant high school engi
             </div>
             {% include member_modal.html username=member.username name=member.name
             image=member.image position=member.position blurb=member.blurb %}
+			{% endif %}
             {% endfor %}
-        </div>
+			</div>
+			{% endfor %}
     </div>
 </section>
 {% endfor %}
