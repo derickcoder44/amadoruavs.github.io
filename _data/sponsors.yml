@@ -20,6 +20,8 @@ actions:
 list:
     #- title: KDE Direct
       #image: kde.png
+      # - title: RFDesign
+      # image: rfdesign.png
     - title: CUAV
       image: cuav.png
     - title: The Imaging Source
@@ -30,6 +32,8 @@ list:
       image: fastsigns.png
     - title: RFDesign
       image: rfdesign.png
+    - title: Amador Valley High School PTSA
+      image: ptsa.png
 levels:
     - name: platinum
       title: Platinum
