@@ -1,16 +1,16 @@
 components:
     - title: Motors + Propellers
-      description: Motors are what make a multicopter go, and our hexacopter needs 6 of them!
+      description: Motors are what make a multicopter go, and our octocopter needs 8 of them!
       price: 380
-      completed: false
+      completed: true
     - title: Speed Controllers
       description: Electronic Speed Controllers (ESCs) provide power to the motors and allow fine speed adjustments.
       price: 240
-      completed: false
+      completed: true
     - title: Batteries
       description: Of course, the drone won't fly without a power source.
       price: 300
-      completed: false
+      completed: true
     - title: Flight Controller
       description: This microcontroller handles self-leveling of the drone as well as navigation commands, gps, sensors etc.
       price: 230
@@ -18,9 +18,24 @@ components:
     - title: Onboard Computer
       description: The onboard companion computer works with the flight controller to perform advanced vision processing and obstacle avoidance.
       price: 140
-      completed: false
+      completed: true
     - title: Camera + Gimbal
       description: A high resolution camera is used for ground object detection and classification.
-      price: 400
+      price: 550
       completed: false
-
+    - title: RTK GPS
+      description: A high accurate real-time kinematic GPS helps us more accurately track waypoints.
+      price: 300
+      completed: false
+    - title: Onboard Computer Peripherals
+      description: Our onboard computer is lacking a few crucial peripheral components!
+      price: 180
+      completed: false
+    - title: Transportation
+      description: We're in Pleasanton, California - but the competition is in Maryland! Help us transport our drone and supplies across the country!
+      price: 500
+      completed: false
+    - title: UGV
+      description: One of the mission components is designing an unmanned ground vehicle that drops to the ground and drives away.
+      price: 150
+      completed: false

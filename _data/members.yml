@@ -3,69 +3,80 @@
   division: Mechanical
   position: Mechanical Team Lead
   image: /assets/images/members/ishan
-  email: iduriseti@gmail.com
 - name: Kai Gottschalk
   username: kgottschalk
   division: Electrical
   position: Electrical Team Lead
   image: /assets/images/members/kai
-  email: amkkproductions@gmail.com
 - name: Kalyan Sriram
   username: ksriram
   division: Software
   position: Software Team Lead
   image: /assets/images/members/placeholder
-  email: coder.kalyan@gmail.com
-  #blurb: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur suscipit non nibh sit amet varius. Nulla facilisi. Mauris posuere dolor ac lobortis ornare. Nullam elementum lorem in nisl lobortis, eget semper neque placerat. Suspendisse suscipit est ac libero pretium pretium. Morbi sagittis sem neque, nec fringilla metus efficitur id. Morbi sed sapien lectus. Sed vel augue risus. Praesent bibendum lacinia felis, sit amet efficitur tellus ultrices in. 
 - name: Marie Lee
   username: mlee
   division: Business
   position: Business Team Lead
   image: /assets/images/members/marie
-  email: itsmarielee@gmail.com
-- name: Edward Ding
-  username: eding
-  division: Business
-  position: Treasurer
-  image: /assets/images/members/placeholder
 - name: Frank Yu
   username: fyu
   division: Mechanical
-  position: Physics
+  position: Design
   image: /assets/images/members/frank
-  email: ironwolf20042004@gmail.com
 - name: Vincent Wang
   username: vwang
   division: Software
   position: Image Processing
   image: /assets/images/members/vincent
-  email: vwangsf@gmail.com
 - name: Derick Mathews
   username: dmathews
   division: Software
-  position: Autopilot
+  position: Communications
   image: /assets/images/members/derick
   email: derickdennismathews@gmail.com
-#- name: Ethan Apalis
-  #username: eapalis
-  #division: Business
-  #position: Fundraising
-  #image: /assets/images/members/placeholder.webp
-  # email: kalsrir@amadoruavs.com
 - name: Sungje Park
   username: spark
   division: Business
-  position: Management
+  position: Club Administration
   image: /assets/images/members/placeholder
   email: sungje.park123@gmail.com
 - name: Sri Kondapalli
   username: skondapalli
   division: Software
-  position: Obstacle Avoidance
-  image: /assets/images/members/sri
-- name: Arjun
+  position: UGV
+  image: /assets/images/members/placeholder
+- name: Arjun Bemarkar
   username: arjun
   division: Software
-  position: Vision
+  position: Obstacle Avoidance
+  image: /assets/images/members/sri
+- name: Matthew Zhao
+  username: matthew
+  division: Software
+  position: Infrastructure
   image: /assets/images/members/placeholder
-
+- name: Raghav
+  username: raghav
+  division: Software
+  position: Obstacle Avoidance
+  image: /assets/images/members/placeholder
+- name: Josh Wei
+  username: josh
+  division: Business
+  position: Business
+  image: /assets/images/members/placeholder
+- name: Aryan
+  username: aryan
+  division: Business
+  position: Business
+  image: /assets/images/members/placeholder
+- name: Austin
+  username: austin
+  division: Electrical
+  position: Micron Development
+  image: /assets/images/members/placeholder
+- name: Andrew
+  username: andrew
+  division: Mechanical
+  position: Mechanical
+  image: /assets/images/members/placeholder
