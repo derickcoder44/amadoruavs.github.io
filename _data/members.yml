@@ -44,12 +44,12 @@
   username: skondapalli
   division: Software
   position: UGV
-  image: /assets/images/members/placeholder
+  image: /assets/images/members/sri
 - name: Arjun Bemarkar
   username: arjun
   division: Software
   position: Obstacle Avoidance
-  image: /assets/images/members/sri
+  image: /assets/images/members/placeholder
 - name: Matthew Zhao
   username: matthew
   division: Software
