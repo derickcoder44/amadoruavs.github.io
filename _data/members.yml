@@ -80,3 +80,18 @@
   division: Mechanical
   position: Mechanical
   image: /assets/images/members/placeholder
+- name: Justin Park
+  username: justinp
+  division: Mechanical
+  position: Mechanical
+  image: /assets/images/members/placeholder
+- name: Justin Z
+  username: justinz
+  division: Business
+  position: Business
+  image: /assets/images/members/placeholder
+- name: Ethan Kuo
+  username: ethan
+  division: Software
+  position: Navigation
+  image: /assets/images/members/placeholder
