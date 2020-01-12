@@ -12,7 +12,7 @@
   username: ksriram
   division: Software
   position: Software Team Lead
-  image: /assets/images/members/placeholder
+  image: /assets/images/members/kalyan
 - name: Marie Lee
   username: mlee
   division: Business
@@ -26,7 +26,7 @@
 - name: Vincent Wang
   username: vwang
   division: Software
-  position: Image Processing
+  position: Navigation
   image: /assets/images/members/vincent
 - name: Derick Mathews
   username: dmathews
@@ -53,12 +53,12 @@
 - name: Matthew Zhao
   username: matthew
   division: Software
-  position: Infrastructure
+  position: Networking
   image: /assets/images/members/placeholder
 - name: Raghav
   username: raghav
   division: Software
-  position: Obstacle Avoidance
+  position: Image Processing
   image: /assets/images/members/placeholder
 - name: Josh Wei
   username: josh
@@ -93,5 +93,5 @@
 - name: Ethan Kuo
   username: ethan
   division: Software
-  position: Navigation
+  position: Obstacle Avoidance
   image: /assets/images/members/placeholder
