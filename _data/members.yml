@@ -49,12 +49,17 @@
   username: arjun
   division: Software
   position: Obstacle Avoidance
-  image: /assets/images/members/placeholder
+  image: /assets/images/members/arjun
 - name: Matthew Zhao
   username: matthew
   division: Software
   position: Networking
-  image: /assets/images/members/placeholder
+  image: /assets/images/members/matthew
+- name: Arnav
+  username: arnav
+  division: Software
+  position: Imaging System
+  image: /assets/images/members/arnav
 - name: Raghav
   username: raghav
   division: Software
@@ -79,12 +84,12 @@
   username: andrew
   division: Mechanical
   position: Mechanical
-  image: /assets/images/members/placeholder
+  image: /assets/images/members/andrew
 - name: Justin Park
   username: justinp
   division: Mechanical
   position: Mechanical
-  image: /assets/images/members/placeholder
+  image: /assets/images/members/justinp
 - name: Justin Z
   username: justinz
   division: Business
