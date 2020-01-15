@@ -1,6 +1,15 @@
-now: 2019
+now: 2020
 start: 2018
-events:
+events: 
+    - date: January 2020
+      blurb: First fully software-driven autonomous test flight
+    - date: December 2019 
+      blurb: Began extensive autonomous testing with Macron
+    - date: November 2019
+      blurb: First flight of Macron with CUAV V5+ Flight Controller
+        Applied and was accepted into the International SUAS Autonomous Drone Competition
+    - date: August 2019
+      blurb: Obtained competition drone, Macron, based on Cinestar 8 Octocopter frame
     - date: July 2019
       blurb: Micron v4, based on Holybro S500 package
     - date: May 2019
@@ -8,7 +17,7 @@ events:
     - date: April 2019
       blurb: Micron v2 with newly designed arms
     - date: March 2019
-      blurb: Introducing first prototype Micron quadcopter
+      blurb: Introduced first prototype - 3D printed Micron quadcopter
     - date: February 2019
       blurb: Switch to initial drone (hexacopter) designs
     - date: January 2019
