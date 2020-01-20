@@ -1,3 +1,6 @@
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 12px !important; } }
 html {
   scroll-behavior: smooth; }
 
@@ -75,7 +78,7 @@ html {
   border-radius: 10px; }
 
 .page-title {
-  font-size: 70pt !important;
+  font-size: 5rem !important;
   margin-bottom: 40px !important; }
 
 .page-subtitle {

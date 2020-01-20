@@ -1,16 +1,12 @@
-// @font-face {
-	// font-family: "Gilroy Light";
-	// src: url("/assets/fonts/gilroy/light.ttf");
-    // font-display: swap;
-// }
+@media screen and (max-width: 550px) {
+    html {
+        font-size: 12px !important;
+    }
+}
 
 html {
     scroll-behavior: smooth;
 }
-
-// body {
-    // font-family: Gilroy Light !important;
-// }
 
 .webp {
     #sponsorHero {
@@ -131,7 +127,7 @@ html {
 }
 
 .page-title {
-    font-size: 70pt !important;
+    font-size: 5rem !important;
     margin-bottom: 40px !important;
 }
 
