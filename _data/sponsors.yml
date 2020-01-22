@@ -34,6 +34,12 @@ list:
       image: rfdesign.png
     - title: Amador Valley High School PTSA
       image: ptsa.png
+    - title: Sensirion
+      image: sensirion.png
+    - title: DigiKey Electronics
+      image: digikey.png
+    - title: Computar
+      image: computar.png
 levels:
     - name: platinum
       title: Platinum
