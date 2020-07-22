@@ -40,6 +40,8 @@ list:
       image: digikey.png
     - title: Computar
       image: computar.png
+    - title: Insta360
+      image: insta360.png
 levels:
     - name: platinum
       title: Platinum
